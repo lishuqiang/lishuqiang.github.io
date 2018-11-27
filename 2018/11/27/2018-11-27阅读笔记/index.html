@@ -5,18 +5,35 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="2018-11-26阅读笔记, oneShenxin">
-    <meta name="description" content="build建立；建造
-compile 编译
-execute执行
-Ctrl+]：检测程序中的括号是否匹配
-F7：建立操作
-Ctrl+F5：Execute（执行）操作
-F5：进行调试
-way 方式
-Radius半径
-unsigned无符号的
-s">
+    <meta name="keywords" content="2018-11-27阅读笔记, oneShenxin">
+    <meta name="description" content="3.6.2 实型变量
+实型变量的分类
+
+
+
+类型名称
+关键字
+类型名称
+关键字
+
+
+
+
+单精度类型
+float
+双精度类型
+double
+
+
+长双精度类型
+long double
+
+
+
+
+
+3.6.3字符型变量
+定义字符型变量的方法是使用关">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -24,7 +41,7 @@ s">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>2018-11-26阅读笔记 | oneShenxin</title>
+    <title>2018-11-27阅读笔记 | oneShenxin</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -255,13 +272,13 @@ s">
 
 
 
-<div class="bg-cover post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
+<div class="bg-cover post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        2018-11-26阅读笔记
+                        2018-11-27阅读笔记
                     </div>
                 </div>
             </div>
@@ -291,161 +308,134 @@ s">
                 
 
                 <span class="post-date">
-                    <i class="fa fa-clock-o fa-fw"></i>2018-11-26
+                    <i class="fa fa-clock-o fa-fw"></i>2018-11-27
                 </span>
             </div>
         </div>
         <hr>
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><code>build</code>建立；建造<br>
-<code>compile</code> 编译<br>
-<code>execute</code>执行<br>
-Ctrl+]：检测程序中的括号是否匹配<br>
-F7：建立操作<br>
-Ctrl+F5：Execute（执行）操作<br>
-F5：进行调试<br>
-<code>way</code> 方式<br>
-<code>Radius</code>半径<br>
-<code>unsigned</code>无符号的<br>
-<code>short</code>短的</p>
-<h1>常量、变量命名规范</h1>
-<p><code>#define AGE 20</code>常量命名统一为大写格式<br>
-<code>int m_iAge;</code>如果是成员变量，均以m_开始<br>
-<code>int iNumber；</code>如果是普通变量，取与实际意义相关的名称，并且添加类型的首字母，而且首字母大写<br>
-<code>int * pAge；</code>如果是指针，则为器标识符前添加p字符，并且首字母大写</p>
-<h1>函数的命名规范</h1>
-<p>函数名的首字母大写，其后的字母大小写混合<br>
-例如：`int AddTwoNum(int num1,int num2);</p>
-<h1>注释（多行注释则对齐）</h1>
-<p>例如：<code>Int iLong;　　　　　　　　/*长度*/</code></p>
-<h1>常量</h1>
-<p>定义：在程序中不可改变的量<br>
-常量可以分为三大类：<br>
-1、数值型常量（包括整型常量和实型常量）<br>
-2、字符型常量<br>
-3、符号常量</p>
-<h2 id="整型常量"><a class="header-anchor" href="#整型常量">¶</a>整型常量</h2>
-<p>定义：就是直接还用的整型常数，例如：123、-6209。8等。<br> 常量可以分为四类，分别是：<br>
-1、长整型  2、短整型  3、符号整型  4、无符号整型<br>
-在编写整型常量时，可以在常量的后面加上符号L或者U进行修饰。L表示该常量是长整型，U表示该常量为无符号整型，例如：<br>
-<code>LongNum= 1000L; 　　　　　　 UnsignLongNum=500U;</code><br>
-L和U可以用大写，也可以使用小写。<br>
-整型常量可以通过3种形式表达，分别是八进制形式、十进制形式、十六进制形式。<br>
-1、八进制形式（0~7之间）<br>
-例如：<br>
-<code>OctalNumber1=0123;</code>（必须是4位数，且不包含大于7的数<br>
-2、十进制整数<br>
-不需要在其前面添加前缀的。<br>
-例如：<br>
-<code>AlgorismNumber1=123</code><br>
-3、十六进制整数<br>
-常量前面使用0×作为前缀。十六进制中包含数字0<sub>9，和字母A</sub>F。<br>
-例如：<br>
-<code>HexNumber1=0×123；</code><br>
-其中字母可以是大写，也可以是小写</p>
-<h2 id="实型常量"><a class="header-anchor" href="#实型常量">¶</a>实型常量</h2>
-<p>实型也称为浮点型，由整数部分和小数部分组成，并用十进制的小数点进行分隔。表示实数的方式有两种，分别是：科学计数方式和指数方式。<br>
-1、科学计数方式<br>
-例如：<br>
-<code>SciNum1=123.45</code><br>
-<code>SciNum2=0.5458</code><br>
-2、指数方式<br>
-使用字母e或E进行指数表示<br>
-例如：<br>
-<code>SciNum1=1.2345e2</code>所表示的值为123.45<br>
-<code>SciNum2=5.458e-1</code>所表示的值为0.5458<br>
-在编写实型常量时，可以在常量的后面加上符号F或者L进行修饰。F代表float，单精度类型，L代表long，长双精度类型。<br>
-例如：<br>
-<code>FloatNum= 1.2345e2F</code>单精度类型<br>
-<code>LongDoubleNum=5.458E-1L</code>长双精度类型</p>
-<h2 id="字符型常量"><a class="header-anchor" href="#字符型常量">¶</a>字符型常量</h2>
-<p>字符型常量可以分成两种，分别是字符常量和字符串常量<br>
-1、字符常量<br>
-例如：‘A’、’#'<br>
-2、字符串常量<br>
-例如：“Hello world”、“welcome”<br>
-字符串“welcome”在内存中的存储形式为：<br>
-<code>welcpme\0</code></p>
+                <h1>3.6.2 实型变量</h1>
+<p>实型变量的分类</p>
 <table>
 <thead>
 <tr>
-<th style="text-align:center">转义字符</th>
-<th style="text-align:center">意义</th>
-<th style="text-align:center">转义字符</th>
-<th style="text-align:center">意义</th>
+<th style="text-align:center">类型名称</th>
+<th style="text-align:center">关键字</th>
+<th style="text-align:center">类型名称</th>
+<th style="text-align:center">关键字</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center">\n</td>
-<td style="text-align:center">回车换行</td>
-<td style="text-align:center"><code>\\</code></td>
-<td style="text-align:center">反斜杠“\”</td>
+<td style="text-align:center">单精度类型</td>
+<td style="text-align:center">float</td>
+<td style="text-align:center">双精度类型</td>
+<td style="text-align:center">double</td>
 </tr>
 <tr>
-<td style="text-align:center">\t</td>
-<td style="text-align:center">横向跳到下一制表位置</td>
-<td style="text-align:center"><code>\'</code></td>
-<td style="text-align:center">单引号符</td>
-</tr>
-<tr>
-<td style="text-align:center">\v</td>
-<td style="text-align:center">竖向跳格</td>
-<td style="text-align:center"><code>\a</code></td>
-<td style="text-align:center">鸣铃</td>
-</tr>
-<tr>
-<td style="text-align:center">\b</td>
-<td style="text-align:center">退格</td>
-<td style="text-align:center">\ddd</td>
-<td style="text-align:center">1~3位八进制数所代表的字符</td>
-</tr>
-<tr>
-<td style="text-align:center">\r</td>
-<td style="text-align:center">回车</td>
-<td style="text-align:center">\xhh</td>
-<td style="text-align:center">1~2位十六进制数所代表的字符</td>
-</tr>
-<tr>
-<td style="text-align:center">\f</td>
-<td style="text-align:center">走纸换页</td>
+<td style="text-align:center">长双精度类型</td>
+<td style="text-align:center">long double</td>
 <td style="text-align:center"></td>
 <td style="text-align:center"></td>
 </tr>
 </tbody>
 </table>
-<p><strong>整型变量的分类</strong></p>
+<h1>3.6.3字符型变量</h1>
+<p>定义字符型变量的方法是使用关键字char。例如，要定义一个字符型的变量cChar,为其赋值为’a’的方法如下：<br>
+<code>char cChar;</code><br>
+<code>cChar='a;</code></p>
 <table>
 <thead>
 <tr>
 <th style="text-align:center">类型</th>
 <th style="text-align:center">关键字</th>
-<th style="text-align:center">类型</th>
-<th style="text-align:center">关键字</th>
+<th style="text-align:center">字节</th>
+<th style="text-align:center">数值范围</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center">有符号基本整型</td>
-<td style="text-align:center">[signed]int</td>
-<td style="text-align:center">无符号基本整型</td>
-<td style="text-align:center">unsigned [int]</td>
+<td style="text-align:center">整型</td>
+<td style="text-align:center">[sogned]</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">-2147483648~2147483647</td>
 </tr>
 <tr>
-<td style="text-align:center">有符号短整型</td>
-<td style="text-align:center">[signed]short[int]</td>
+<td style="text-align:center">无符号整型</td>
+<td style="text-align:center">unsigned[int]</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">0~4294967295</td>
+</tr>
+<tr>
+<td style="text-align:center">短整型</td>
+<td style="text-align:center">short[int]</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">-32768~32767</td>
+</tr>
+<tr>
 <td style="text-align:center">无符号短整型</td>
 <td style="text-align:center">unsigned short [int]</td>
+<td style="text-align:center">2</td>
+<td style="text-align:center">0~65535</td>
 </tr>
 <tr>
-<td style="text-align:center">有符号长整型</td>
-<td style="text-align:center">[signed]long[int]</td>
+<td style="text-align:center">长整型</td>
+<td style="text-align:center">long [int]</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">-2147483648~21474836</td>
+</tr>
+<tr>
 <td style="text-align:center">无符号长整型</td>
 <td style="text-align:center">unsigned long [int]</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">0~4294967295</td>
+</tr>
+<tr>
+<td style="text-align:center">字符型</td>
+<td style="text-align:center">[signed]int</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">-128~127</td>
+</tr>
+<tr>
+<td style="text-align:center">无符号字符型</td>
+<td style="text-align:center">unsigned char</td>
+<td style="text-align:center">1</td>
+<td style="text-align:center">0~255</td>
+</tr>
+<tr>
+<td style="text-align:center">单精度型</td>
+<td style="text-align:center">float</td>
+<td style="text-align:center">4</td>
+<td style="text-align:center">-3.4×10<sup>-38</sup>~3.4×10<sup>38</sup></td>
+</tr>
+<tr>
+<td style="text-align:center">双精度型</td>
+<td style="text-align:center">double</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">-1.7×10<sup>-308</sup>~1.7×10<sup>308</sup></td>
+</tr>
+<tr>
+<td style="text-align:center">长双精度型</td>
+<td style="text-align:center">long double</td>
+<td style="text-align:center">8</td>
+<td style="text-align:center">-1.7×10<sup>-308</sup>~1.7×10<sup>308</sup></td>
 </tr>
 </tbody>
 </table>
+<h1>3.7变量的存储类别</h1>
+<p>变量的存储类别可以分为两种，分别是静态存储和动态存储。主要有四种修饰符，分别是，自动（auto）、静态（static）、寄存器（register）、外部（extern）。</p>
+<h2 id="3-7-1静态存储于动态存储"><a class="header-anchor" href="#3-7-1静态存储于动态存储">¶</a>3.7.1静态存储于动态存储</h2>
+<p>静态存储是指程序运行时为其分配固定的存储空间<br>
+动态存储是在程序运行期间根据需要动态地址分配存储空间<br>
+1、auto<br>
+auto关键字用于定义一个局部变量为自动的，这意味着每次执行到定义该变量时，都会产生一个新的变量，并且对其重新进行初始化。<br>
+2、static<br>
+在语句块执行期间，static变量将始终保持它的值，并且初始化操作只在第一次执行时起作用。在随后的运行过程中，变量将保持语句块上一次执行的值。<br>
+3、register<br>
+又称寄存器存储类变量。可以把某个局部变量指定存放在计算机的某个硬件寄存器中。但是，对于一个具备可移植性的程序来说，register的作用不大。<br>
+4、extern<br>
+又称外部存储变量。extern声明了程序中将要用到但尚未定义的外部变量。通常，外部存储类都用于声明在另一个转换单元中定义的变量。</p>
 
             </div>
             <hr>
@@ -584,7 +574,7 @@ L和U可以用大写，也可以使用小写。<br>
                     <span class="reprint-tip">Reprint please specify: </span>
                     <a href="http://chuxinuncle.top" class="b-link-green">oneShenxin</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2018/11/26/2018-11-26阅读笔记/" class="b-link-green">2018-11-26阅读笔记</a>
+                    <a href="/2018/11/27/2018-11-27阅读笔记/" class="b-link-green">2018-11-27阅读笔记</a>
                 </p>
             </div>
         </div>
@@ -604,7 +594,7 @@ L和U可以用大写，也可以使用小写。<br>
     <div class="row article-row">
         
         <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge left-badge text-color">Previous</div>
+            <div class="article-badge left-badge text-color">Current</div>
             <div class="card">
                 <a href="/2018/11/27/2018-11-27阅读笔记/">
                     <div class="card-image">
@@ -645,9 +635,9 @@ long double
 3.6.3字符型变量
 定义字符型变量的方法是使用关</div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2018-11-27
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-11-27
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-user fa-fw"></i>
@@ -656,6 +646,7 @@ long double
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -672,25 +663,30 @@ long double
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">Next</div>
             <div class="card">
-                <a href="/2018/11/25/2018-11-25阅读笔记/">
+                <a href="/2018/11/26/2018-11-26阅读笔记/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="2018-11-25阅读笔记">
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="2018-11-26阅读笔记">
                         
-                        <span class="card-title">2018-11-25阅读笔记</span>
+                        <span class="card-title">2018-11-26阅读笔记</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">C语言
-全称：Combined Language
-机器语言：用0和1组成的二进制的一串指令的操作语言
-汇编语言：用英文或符号串来表达二进制码的操作语言
-高级语言：语法类似于英文，不需要对硬件进行直接操作
-#include&lt;stdio.</div>
+                    <div class="summary">build建立；建造
+compile 编译
+execute执行
+Ctrl+]：检测程序中的括号是否匹配
+F7：建立操作
+Ctrl+F5：Execute（执行）操作
+F5：进行调试
+way 方式
+Radius半径
+unsigned无符号的
+s</div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-11-25
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-11-26
                             </span>
                         <span class="publish-author">
                             
