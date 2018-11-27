@@ -1,779 +1,383 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head><meta name="generator" content="Hexo 3.8.0">
-  <meta charset="utf-8">
-  
-  <title>oneShenxin | sometimes code, sometimes design</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="oneShenxin">
+    <meta name="keyword" content="腾讯">
+    <link rel="shortcut icon" href="/img/favicon.ico">
 
-  
-  <meta name="author" content="oneShenxin">
-  
+    <title>
+        
+        oneShenxin&#39;s Blog
+        
+    </title>
 
-  
-  <meta name="description" content="oneShenxin">
-  
-
-  
-
-  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-
-  
-
-  <meta property="og:site_name" content="oneShenxin">
-
-  
-  <meta property="og:image" content="/favicon.ico">
-  
-
-  <link href="/favicon.ico" rel="icon">
-  <link rel="alternate" href="/atom.xml" title="oneShenxin" type="application/atom+xml">
-  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/aircloud.css">
+    <link rel="stylesheet" href="/css/gitment.css">
+    <!--<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">-->
+    <link href="//at.alicdn.com/t/font_620856_pl6z7sid89qkt9.css" rel="stylesheet" type="text/css">
+    <!-- ga & ba script hoook -->
+    <script></script>
 </head>
 
-
 <body>
-<div class="blog">
-  <div class="content">
 
-    <header>
-  <div class="site-branding">
-    <h1 class="site-title">
-      <a href="/">oneShenxin</a>
-    </h1>
-    <p class="site-description">sometimes code, sometimes design</p>
-  </div>
-  <nav class="site-navigation">
-    <ul>
-      
-        <li><a href="/">主页</a></li>
-      
-        <li><a href="/archive">归档</a></li>
-      
-        <li><a href="/about">关于</a></li>
-      
-    </ul>
-  </nav>
-</header>
-
-    <main class="site-main posts-loop">
-    
-  <article>
-
-  
-    
-    <h3 class="article-title"><a href="/2018/11/26/2018-11-26阅读笔记/"><span>2018-11-26阅读笔记</span></a></h3>
-    
-  
-
-  <div class="article-top-meta">
-    <span class="posted-on">
-      <a href="/2018/11/26/2018-11-26阅读笔记/" rel="bookmark">
-        <time class="entry-date published" datetime="2018-11-26T08:37:50.000Z">
-          2018-11-26
-        </time>
-      </a>
-    </span>
-  </div>
-
-
-  
-
-  <div class="article-content">
-    <div class="entry">
-      
-        <p><code>build</code>建立；建造<br><code>compile</code> 编译<br><code>execute</code>执行<br>Ctrl+]：检测程序中的括号是否匹配<br>F7：建立操作<br>Ctrl+F5：Execute（执行）操作<br>F5：进行调试<br><code>way</code> 方式<br><code>Radius</code>半径<br><code>unsigned</code>无符号的<br><code>short</code>短的  </p>
-<h1 id="常量、变量命名规范"><a href="#常量、变量命名规范" class="headerlink" title="常量、变量命名规范"></a>常量、变量命名规范</h1><p><code>#define AGE  20</code>常量命名统一为大写格式<br><code>int m_iAge;</code>如果是成员变量，均以m_开始<br><code>int iNumber；</code>如果是普通变量，取与实际意义相关的名称，并且添加类型的首字母，而且首字母大写<br><code>int * pAge；</code>如果是指针，则为器标识符前添加p字符，并且首字母大写  </p>
-<h1 id="函数的命名规范"><a href="#函数的命名规范" class="headerlink" title="函数的命名规范"></a>函数的命名规范</h1><p>函数名的首字母大写，其后的字母大小写混合<br>例如：`int AddTwoNum(int num1,int num2);</p>
-<h1 id="注释（多行注释则对齐）"><a href="#注释（多行注释则对齐）" class="headerlink" title="注释（多行注释则对齐）"></a>注释（多行注释则对齐）</h1><p>例如：<code>Int iLong;　　　　　　　　/*长度*/</code></p>
-<h1 id="常量"><a href="#常量" class="headerlink" title="常量"></a>常量</h1><p>定义：在程序中不可改变的量<br>常量可以分为三大类：<br>1、数值型常量（包括整型常量和实型常量）<br>2、字符型常量<br>3、符号常量  </p>
-<h2 id="整型常量"><a href="#整型常量" class="headerlink" title="整型常量"></a>整型常量</h2><p>定义：就是直接还用的整型常数，例如：123、-6209。8等。<br> 常量可以分为四类，分别是：<br>1、长整型&nbsp;&nbsp;2、短整型&nbsp;&nbsp;3、符号整型&nbsp;&nbsp;4、无符号整型<br>在编写整型常量时，可以在常量的后面加上符号L或者U进行修饰。L表示该常量是长整型，U表示该常量为无符号整型，例如：<br><code>LongNum= 1000L;   　　　　　　
-UnsignLongNum=500U;</code><br>L和U可以用大写，也可以使用小写。<br>整型常量可以通过3种形式表达，分别是八进制形式、十进制形式、十六进制形式。<br>1、八进制形式（0~7之间）<br>例如：<br><code>OctalNumber1=0123;</code>（必须是4位数，且不包含大于7的数<br>2、十进制整数<br>不需要在其前面添加前缀的。<br>例如：<br><code>AlgorismNumber1=123</code><br>3、十六进制整数<br>常量前面使用0×作为前缀。十六进制中包含数字0~9，和字母A~F。<br>例如：<br><code>HexNumber1=0×123；</code><br>其中字母可以是大写，也可以是小写  </p>
-<h2 id="实型常量"><a href="#实型常量" class="headerlink" title="实型常量"></a>实型常量</h2><p>实型也称为浮点型，由整数部分和小数部分组成，并用十进制的小数点进行分隔。表示实数的方式有两种，分别是：科学计数方式和指数方式。<br>1、科学计数方式<br>例如：<br><code>SciNum1=123.45</code><br><code>SciNum2=0.5458</code><br>2、指数方式<br>使用字母e或E进行指数表示<br>例如：<br><code>SciNum1=1.2345e2</code>所表示的值为123.45<br><code>SciNum2=5.458e-1</code>所表示的值为0.5458<br>在编写实型常量时，可以在常量的后面加上符号F或者L进行修饰。F代表float，单精度类型，L代表long，长双精度类型。<br>例如：<br><code>FloatNum= 1.2345e2F</code>单精度类型<br><code>LongDoubleNum=5.458E-1L</code>长双精度类型  </p>
-<h2 id="字符型常量"><a href="#字符型常量" class="headerlink" title="字符型常量"></a>字符型常量</h2><p>字符型常量可以分成两种，分别是字符常量和字符串常量<br>1、字符常量<br>例如：’A’、’#’<br>2、字符串常量<br>例如：“Hello world”、“welcome”<br>字符串“welcome”在内存中的存储形式为：<br><code>welcpme\0</code><br>|转义字符|意义|转义字符|意义|<br>| :——: | :——: | :——: | :——:  |<br>|\n|回车换行|<code>\\</code>|反斜杠“\”|<br>|\t|横向跳到下一制表位置|<code>\&#39;</code>|单引号符|<br>|\v|竖向跳格|<code>\a</code>|鸣铃|<br>|\b|退格|\ddd|1~3位八进制数所代表的字符|<br>|\r|回车|\xhh|1~2位十六进制数所代表的字符|<br>|\f|走纸换页|<br><strong>整型变量的分类</strong><br>|类型|关键字|类型|关键字|<br>| :——: | :——: | :——: | :——:  |<br>|有符号基本整型|[signed]int|无符号基本整型|unsigned [int]|<br>|有符号短整型|[signed]short[int]|无符号短整型|unsigned short [int]|<br>|有符号长整型|[signed]long[int]| 无符号长整型|unsigned long [int]|</p>
-
-      
-    </div>
-
-  </div>
-
-  <div class="article-footer">
-    <div class="article-meta pull-left">
-
-    
-
-    
-    
-
-    <span class="post-tags">
-      <i class="icon-tags"></i>
-        <a href="/tags/C语言从入门到精通/">C语言从入门到精通</a>
-    </span>
-    
-
-    </div>
-
-    
-  </div>
-</article>
-
-
-
-  <article>
-
-  
-    
-    <h3 class="article-title"><a href="/2018/11/25/2018-11-25阅读笔记/"><span>2018-11-25阅读笔记</span></a></h3>
-    
-  
-
-  <div class="article-top-meta">
-    <span class="posted-on">
-      <a href="/2018/11/25/2018-11-25阅读笔记/" rel="bookmark">
-        <time class="entry-date published" datetime="2018-11-25T13:08:24.000Z">
-          2018-11-25
-        </time>
-      </a>
-    </span>
-  </div>
-
-
-  
-
-  <div class="article-content">
-    <div class="entry">
-      
-        <p><strong>C语言</strong><br>全称：Combined Language<br>机器语言：用0和1组成的二进制的一串指令的操作语言<br>汇编语言：用英文或符号串来表达二进制码的操作语言<br>高级语言：语法类似于英文，不需要对硬件进行直接操作</p>
-<p><code>#include&lt;stdio.h&gt;</code><br>这个语句的功能是进行有关的预处理操作<br><code>int main（）</code><br>声明main函数为一个返回值，整型的函数<br><code>printf</code><br>输出<br><code>return</code>返回<br><code>#define</code>定义<br><code>result</code>结果<br><code>scanf</code>接收键盘输入的内容</p>
-
-      
-    </div>
-
-  </div>
-
-  <div class="article-footer">
-    <div class="article-meta pull-left">
-
-    
-
-    
-    
-
-    <span class="post-tags">
-      <i class="icon-tags"></i>
-        <a href="/tags/C语言从入门到精通/">C语言从入门到精通</a>
-    </span>
-    
-
-    </div>
-
-    
-  </div>
-</article>
-
-
-
-  <article>
-
-  
-    
-    <h3 class="article-title"><a href="/2018/11/23/生活/"><span>生活</span></a></h3>
-    
-  
-
-  <div class="article-top-meta">
-    <span class="posted-on">
-      <a href="/2018/11/23/生活/" rel="bookmark">
-        <time class="entry-date published" datetime="2018-11-23T14:04:00.000Z">
-          2018-11-23
-        </time>
-      </a>
-    </span>
-  </div>
-
-
-  
-
-  <div class="article-content">
-    <div class="entry">
-      
-        <p><img src="https://s1.ax1x.com/2018/11/23/FFk6VP.jpg" alt="FFk6VP.jpg"><br><img src="https://s1.ax1x.com/2018/11/23/FFkrDI.jpg" alt="FFkrDI.jpg"><br><img src="https://s1.ax1x.com/2018/11/23/FFkcUf.jpg" alt="FFkcUf.jpg"><br><img src="https://s1.ax1x.com/2018/11/23/FFksbt.jpg" alt="FFksbt.jpg"><br><img src="https://s1.ax1x.com/2018/11/23/FFkDKA.jpg" alt="FFkDKA.jpg"></p>
-
-      
-    </div>
-
-  </div>
-
-  <div class="article-footer">
-    <div class="article-meta pull-left">
-
-    
-
-    
-    
-
-    <span class="post-tags">
-      <i class="icon-tags"></i>
-        <a href="/tags/手拍/">手拍</a>
-    </span>
-    
-
-    </div>
-
-    
-  </div>
-</article>
-
-
-
-  <article>
-
-  
-    
-    <h3 class="article-title"><a href="/2018/04/23/单词记忆/"><span>单词记忆</span></a></h3>
-    
-  
-
-  <div class="article-top-meta">
-    <span class="posted-on">
-      <a href="/2018/04/23/单词记忆/" rel="bookmark">
-        <time class="entry-date published" datetime="2018-04-23T06:58:42.000Z">
-          2018-04-23
-        </time>
-      </a>
-    </span>
-  </div>
-
-
-  
-
-  <div class="article-content">
-    <div class="entry">
-      
-        <table>
-<thead>
-<tr>
-<th style="text-align:center">单词</th>
-<th style="text-align:center">释义</th>
-<th style="text-align:center">单词</th>
-<th style="text-align:center">释义</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">with</td>
-<td style="text-align:center">用，随着，支持</td>
-<td style="text-align:center">activity</td>
-<td style="text-align:center">活动</td>
-</tr>
-<tr>
-<td style="text-align:center">bar</td>
-<td style="text-align:center">条；棒；禁止</td>
-<td style="text-align:center">adjective</td>
-<td style="text-align:center">形容的</td>
-</tr>
-<tr>
-<td style="text-align:center">detail</td>
-<td style="text-align:center">细节；详述</td>
-<td style="text-align:center">data</td>
-<td style="text-align:center">数据；资料</td>
-</tr>
-<tr>
-<td style="text-align:center">master</td>
-<td style="text-align:center">控制；硕士；主人的</td>
-<td style="text-align:center">filp</td>
-<td style="text-align:center">轻击；翻转</td>
-</tr>
-<tr>
-<td style="text-align:center">foreground</td>
-<td style="text-align:center">前景</td>
-<td style="text-align:center">navigational</td>
-<td style="text-align:center">航空的；航运的</td>
-</tr>
-<tr>
-<td style="text-align:center">build</td>
-<td style="text-align:center">建造；建立</td>
-<td style="text-align:center">license</td>
-<td style="text-align:center">执照；许可</td>
-</tr>
-<tr>
-<td style="text-align:center">optional</td>
-<td style="text-align:center">可选择的</td>
-<td style="text-align:center">interface</td>
-<td style="text-align:center">界面；接口</td>
-</tr>
-<tr>
-<td style="text-align:center">filter</td>
-<td style="text-align:center">过滤器；过滤</td>
-<td style="text-align:center">archive</td>
-<td style="text-align:center">档案</td>
-</tr>
-<tr>
-<td style="text-align:center">device</td>
-<td style="text-align:center">装置；设备</td>
-<td style="text-align:center">program</td>
-<td style="text-align:center">程序</td>
-</tr>
-<tr>
-<td style="text-align:center">gen</td>
-<td style="text-align:center">情报</td>
-<td style="text-align:center">scale</td>
-<td style="text-align:center">规模；测量</td>
-</tr>
-</tbody>
-</table>
-
-      
-    </div>
-
-  </div>
-
-  <div class="article-footer">
-    <div class="article-meta pull-left">
-
-    
-
-    
-
-    </div>
-
-    
-  </div>
-</article>
-
-
-
-  <article>
-
-  
-    
-    <h3 class="article-title"><a href="/2018/04/23/2316计算机应用技术之思维导图/"><span>2316计算机应用技术之思维导图</span></a></h3>
-    
-  
-
-  <div class="article-top-meta">
-    <span class="posted-on">
-      <a href="/2018/04/23/2316计算机应用技术之思维导图/" rel="bookmark">
-        <time class="entry-date published" datetime="2018-04-23T05:16:59.000Z">
-          2018-04-23
-        </time>
-      </a>
-    </span>
-  </div>
-
-
-  
-
-  <div class="article-content">
-    <div class="entry">
-      
-        <p><img src="https://s1.ax1x.com/2018/04/23/CQDpkt.jpg" alt="第一章" title="第一章及其应用概述"><img src="https://s1.ax1x.com/2018/04/23/CQBXOH.png" alt="第二章" title="第二章 计算机系统软件概述"></p>
-
-      
-    </div>
-
-  </div>
-
-  <div class="article-footer">
-    <div class="article-meta pull-left">
-
-    
-
-    
-    
-
-    <span class="post-tags">
-      <i class="icon-tags"></i>
-        <a href="/tags/自学考试/">自学考试</a>
-    </span>
-    
-
-    </div>
-
-    
-  </div>
-</article>
-
-
-
-  <article>
-
-  
-    
-    <h3 class="article-title"><a href="/2018/04/23/第一章-计算机及其应用概述/"><span>第一章 计算机及其应用概述</span></a></h3>
-    
-  
-
-  <div class="article-top-meta">
-    <span class="posted-on">
-      <a href="/2018/04/23/第一章-计算机及其应用概述/" rel="bookmark">
-        <time class="entry-date published" datetime="2018-04-23T05:00:22.000Z">
-          2018-04-23
-        </time>
-      </a>
-    </span>
-  </div>
-
-
-  
-
-  <div class="article-content">
-    <div class="entry">
-      
-        <hr>
-<p>title: 第一章 计算机及其应用概述<br>date: 2018-04-04 21:28:15</p>
-<h2 id="tags-自学考试"><a href="#tags-自学考试" class="headerlink" title="tags: 自学考试"></a>tags: 自学考试</h2><p><strong>第一章计算机及其应用概述</strong></p>
-<h3 id="一、单项选择题"><a href="#一、单项选择题" class="headerlink" title="一、单项选择题"></a><strong>一、单项选择题</strong></h3><p>1、在中国古代出现过一种由木头或竹子做成的小木棍，用来模拟和扩展手指运算功能的计算工具，这种工具被称为<strong>算盘</strong>。</p>
-<p>2、最早发明算盘计算工具的国家或地区是<strong>中国</strong>。</p>
-<p>3、下列选项中，不属于第一台电子计算机ENIAC特点的是不能进行<strong>除法和平方根运算</strong>。</p>
-<p>4、目前所使用的计算机采用的电子元器件是<strong>超大规模集成电路</strong>。</p>
-<p>5、计算机能够直接识别的语言是<strong>机器语言</strong>。</p>
-<p>6、为了便于分析和设计，通常用来描述计算机指令的语言是<strong>自然语言</strong>。</p>
-<p>7、二进制数10111101等于十进制数<strong>189</strong>。</p>
-<h3 id="二、填空题"><a href="#二、填空题" class="headerlink" title="二、填空题"></a><strong>二、填空题</strong></h3><p>1、计算机存储器的存储容量以<strong>字</strong>节为单位。</p>
-<p>2、标准ASCII码是7位编码，存储一个ASCII码占<strong>1</strong>字节。</p>
-<p>3、十六进制数D7对应的十进制数是<strong>215</strong>。</p>
-<p>4、冯·洛伊曼提出的<strong>存储思想结构</strong>是目前计算机体系的基础。</p>
-<p>5、4位二进制数可以表示<strong>16</strong>种不同的状态。</p>
-<p>6、计算机系统由电子、机械和光电元器件等组成的各种物理装置统称为<strong>硬件</strong>。</p>
-<p>7、专门用来完成读取指令和执行指令的部件称为<strong>中央处理器</strong>。</p>
-<p>8、运算器是计算机的加工处理部件，受<strong>控制器</strong>发出的控制信号指挥。</p>
-<p>9、CPU中用来在暂时保存运算和控制过程中的中间结果、最终结果以及各种控制、状态信息的器件是<strong>寄存器</strong>。</p>
-<p>10、字长是CPU一次能<strong>并行处理</strong>的二进制数的位数。</p>
-<p>11、一台计算机所有指令的集合构成该机器的<strong>指令系统（指令集）</strong>。</p>
-<p>12、一条机器指令的基本格式包括操作码和操作对象（源操作数或地址）。</p>
-<p>13、用来将汉字输入到计算机中的一组键盘符号称为输入码（外码）。</p>
-<h3 id="三、简答题"><a href="#三、简答题" class="headerlink" title="三、简答题"></a><strong>三、简答题</strong></h3><p><strong>1、简述计算和算法概念的含义。</strong></p>
-<p>计算，抽象的说，计算就是映射或基于一定规则的符号串的变换过程。算法，就是求解某类问题的通用法则或方法，即符号串变换的规则。算法通常由某种精确的语言来表述，算法的执行过程就是计算。</p>
-<p><strong>2、简述人类计算工具发展所经历的各个阶段。</strong></p>
-<p>1、手工计算阶段：中国很早就出现了算盘，配套有完整得原酸口诀和操作方法。后来传到了日本、朝鲜、东南亚、西亚和欧洲街，成为使用最广泛的、价格最低廉的计算工具。但是，在面对大型复杂计算问题时都无能为力。2、机械计算阶段：1642年，法国人帕斯卡发明了能用齿轮计算的机械加法器。1666年，英国人莫兰发明了可以进行加减运算的机械计算器。1673年，德国人莱布尼兹在帕斯卡原有的基础上增加了乘除运算。1822年，英国人巴贝奇首先提出计算过程自动化的概念，设计出了第一台通用自动时序控制机械式计算机，称为”巴贝奇差分机”，为现代计算机设计思想的发展奠定了基础。</p>
-<p><strong>3、简述冯·洛伊曼”存储程序”计算机的基本结构和功能</strong>。</p>
-<p><strong>基本结构</strong>：</p>
-<ul>
-<li><p>输入程序和数据的输入设备</p>
-</li>
-<li><p>记忆程序和数据的存储器</p>
-</li>
-<li><p>完成数据加工处理的运算器</p>
-</li>
-<li><p>控制程序执行的控制器</p>
-</li>
-<li><p>输出最终处理结果的输出器</p>
-</li>
-</ul>
-<p><strong>功能</strong>：</p>
-<ul>
-<li><p>把需要的程序和数据送至计算机中</p>
-</li>
-<li><p>必须具有长期记忆程序、数据、中间结果及最终运算结果的能力</p>
-</li>
-<li><p>具有完成各种算数运算、逻辑运算和数据传送的能力</p>
-</li>
-<li><p>能够根据需要控制程序的走向，并能根据指令控制机器的各部件协调操作</p>
-</li>
-<li><p>能够按照要求将处理结果输出给用户</p>
-</li>
-</ul>
-<p><strong>4、电子计算机经历了几个阶段？各个阶段的使用的元器件各是什么</strong>？</p>
-<p>电子计算机经历了四个阶段。分别是电子管计算机时代、晶体管计算机时代、中小规模集成电路计算机时代、大规模超大规模集成电路计算机时代。</p>
-<p>第一阶段（20世纪40年代中期到20世纪50年代末）采用电子管元器件，称之为电子管电子计算机时代</p>
-<p>第二阶段（20世纪50年代中后期到60年代中期）采用晶体管元器件，称之为晶体管电子计算机时代</p>
-<p>第三阶段（20世纪60年代中期到20世纪70年代中期）采用中小规模集成电路，称之为中小规模集成电路电子计算机时代</p>
-<p>第四阶段（20世纪70年代末期至今）采用大规模超大规模集成电路，称之为大规模超大规模集成电路电子计算机时代</p>
-<p><strong>5、简述CPU的主要功能</strong>。</p>
-<p>（1）程序控制（2）操作控制（3）时间控制（4）数据运算</p>
-<p><strong>6、描述CPU性能的指标有哪些？这些指标各自的含义是什么？</strong></p>
-<p>指标：（1）时钟频率-主频（2）外频（3）指令系统和字长</p>
-<p>指标的含义：<br>（1）时钟频率：主频越高，CPU的运算速度越快<br>（2）外频：外频速度越高，CPU同时接受的外围设备传来的数据越多<br>（3）指令系统是计算机所能执行的全部指令集合，是影响着一台计算机性能的重要因素，其格式和功能直接影响硬件结构和系统软件。字长是CPU一次能并行处理二进制数的位数，字长越长，CPU处理能力越强。</p>
-<p><strong>7、简述计算机的三级存储器体系结构。</strong></p>
-<p><strong>8、写出常见的计算机输入/输出设备。</strong></p>
-<p>输入/输出设备：键盘、鼠标、传声器、摄像头、触摸屏、显示器、打印机、音箱和耳机。</p>
-<p><strong>9、简述总线的含义和分类。</strong></p>
-<p>用一组线路配置适当的接口电路，与各部件和外围设备连接，这组共用的连接线路被称为总线。</p>
-<p>按总线传输的信号性质，可将总线分为地址总线、数据总线和控制总线。</p>
-<p><strong>10、简述计算机软件解决实际问题的一般步骤。</strong></p>
-<p><strong>11、将二进制数（110110）和十六进制数（2CE）转换成十进制数。</strong></p>
-<p>二进制数（110110）等于十进制数54</p>
-<p>二进制数（2CE）等于十进制数718</p>
-<p><strong>12、将四个十进制数表示的IP地址202.205.140.52分别写成二进制和十六进制形式。</strong></p>
-<p>二进制为1001010.11001101.10001100.110100</p>
-<p>十六进制为4a.cd.8c.34</p>
-<p><strong>13、请写出十进制数-120、36、0.78的原码、反码和补码（机器字长为8位）。</strong></p>
-<p>原码分别为：11111000、00100100、01001110</p>
-<p>反码分别为：10000111、00100100、01001110</p>
-<p>补码分别为：10000120、00100100、01001110</p>
-<p><strong>14、设在计算机中用16位2进制数表示浮点数，阶数占4位，采用补码表示；尾数占12位，用原码表示。请写出110.0101001、-1011011.00101的浮点数二进制编码。</strong></p>
-<p><strong>15、设某显示字库一般采用64×64点阵字库，则每个显示汉字在计算机中占多少字节？</strong></p>
-<p>64 * 64 = 4096 个像素点，一个像素点用1 bit 存储，8bit 为1 byte，4096 / 8 = 512 byte （字节）</p>
-<p><strong>16、简述计算机的应用领域和未来发展趋势。</strong></p>
-<p>计算机的应用领域：（1）科学计算（2）信息管理（3）自动控制（4）人工智能（5）辅助工程（6）学习娱乐（7）电子商务</p>
-<p>计算机未来发展趋势：（1）网络化（2）智能化（3）巨型化和微型化</p>
-<p><strong>补充数学知识点</strong></p>
-<p>一个数除以另一个数，要是比另一个数小的话，商为0，余数就是它自己。[1] 例如：1除以2，商数为0，余数为1；2除以3，商数为0，余数为2。</p>
-
-      
-    </div>
-
-  </div>
-
-  <div class="article-footer">
-    <div class="article-meta pull-left">
-
-    
-
-    
-    
-
-    <span class="post-tags">
-      <i class="icon-tags"></i>
-        <a href="/tags/自学考试/">自学考试</a>
-    </span>
-    
-
-    </div>
-
-    
-  </div>
-</article>
-
-
-
-  <article>
-
-  
-    
-    <h3 class="article-title"><a href="/2018/04/23/W3Cschool-JavaScript基础篇/"><span>W3Cschool-JavaScript基础篇</span></a></h3>
-    
-  
-
-  <div class="article-top-meta">
-    <span class="posted-on">
-      <a href="/2018/04/23/W3Cschool-JavaScript基础篇/" rel="bookmark">
-        <time class="entry-date published" datetime="2018-04-23T04:58:44.000Z">
-          2018-04-23
-        </time>
-      </a>
-    </span>
-  </div>
-
-
-  
-
-  <div class="article-content">
-    <div class="entry">
-      
-        <hr>
-<p>title: W3Cschool-JavaScript基础篇<br>date: 2018-04-05 15:14:58</p>
-<h2 id="tags-W3Cschool实战练习笔记"><a href="#tags-W3Cschool实战练习笔记" class="headerlink" title="tags: W3Cschool实战练习笔记"></a>tags: W3Cschool实战练习笔记</h2><h2 id="JavaScript-注释语句操作"><a href="#JavaScript-注释语句操作" class="headerlink" title="JavaScript 注释语句操作"></a>JavaScript 注释语句操作</h2><p>使用 // 通知JavaScript来忽略当前行的代码<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// This is an in-line comment.</span></span><br></pre></td></tr></table></figure></p>
-<p>你也可以使用多行注释来注释你的代码，以/<em>开始，通过</em>/来结束，参考如下代码：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* This is a </span></span><br><span class="line"><span class="comment"> multi-line comment */</span></span><br></pre></td></tr></table></figure></p>
-<h2 id="声明JavaScript变量"><a href="#声明JavaScript变量" class="headerlink" title="声明JavaScript变量"></a>声明JavaScript变量</h2><p>在计算机科学中, <strong>data</strong>(数据)大于一切，因为它对于计算机的意义重大。JavaScript提供七种不同的<strong>data</strong> <strong>types(数据类型)</strong>，它们是<strong>undefined（未定义）</strong>, <strong>null（空）</strong>, <strong>boolean（布尔型）</strong>, <strong>string（字符串）</strong>, <strong>symbol(符号)</strong>, <strong>number（数字</strong>）, <strong>and object（对象）</strong>。</p>
-<p>举个栗子, 计算机能够分辨不同的数字, 例如数字 12，但是”12”和”dog”, 或”123 cats”, 却是字母的集合。 计算机能够精确地运算数字， 但是无法处理字符串中的数字。</p>
-<p><strong>Variables</strong>允许计算机以动态的形式来存储和操作数据，通过操作指向数据的指针而不是数据本身来避免了内存泄露，以上的七种数据类型都可以存储到一个<strong>Variables</strong>中。</p>
-<p><strong>Variables</strong>类似于您在数学中使用的x和y变量，这意味着它们通过一个简单的名称来表示我们要引用的数据。 计算机中的<strong>Variables</strong>与数学变量不同，因为它们可以在不同时间存储不同的值。</p>
-<p>通过在变量的前面使用关键字var，我们告诉 JavaScript 来创建或者 <strong>declare</strong>一个变量,就像这样：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> ourName;</span><br></pre></td></tr></table></figure></p>
-<p>上面代码的意思是创建一个名为ourName的<strong>variable</strong>，在JavaScript中我们使用;（分号）来结束一段声明。</p>
-<p><strong>Variable</strong>的名字可以由数字、字母、$ 或者 _组成，但是不能包含空格或者以数字为首。</p>
-<h2 id="JavaScript-使用-为变量赋值"><a href="#JavaScript-使用-为变量赋值" class="headerlink" title="JavaScript 使用=为变量赋值"></a>JavaScript 使用=为变量赋值</h2><p>在JavaScript中，您可以使用=赋值运算符将值存储在变量中。</p>
-<p>myVariable = 5;</p>
-<p>把Number数字5赋给变量myVariable。</p>
-<p>赋值过程是从右向左进行的。所有 = 赋值运算符右边的值都会被赋到左边的变量中。</p>
-<p>myVar = 5;<br>myNum = myVar;<br>数值 5 被赋给变量 myVar 中， 然后变量 myVar 又赋给变量 myNum ，这样子 myNum 变量中的值也是 5 了。</p>
-<h2 id="JavaScript-使用-为变量赋值-1"><a href="#JavaScript-使用-为变量赋值-1" class="headerlink" title="JavaScript 使用=为变量赋值"></a>JavaScript 使用=为变量赋值</h2><p>在JavaScript中，您可以使用=赋值运算符将值存储在变量中。</p>
-<p>myVariable = 5;</p>
-<p>把Number数字5赋给变量myVariable。</p>
-<p>赋值过程是从右向左进行的。所有 = 赋值运算符右边的值都会被赋到左边的变量中。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt; myVar = <span class="number">5</span>;    </span><br><span class="line">&gt; myNum = myVar;</span><br></pre></td></tr></table></figure></p>
-<p>数值 5 被赋给变量 myVar 中， 然后变量 myVar 又赋给变量 myNum ，这样子 myNum 变量中的值也是 5 了。</p>
-<h2 id="JavaScript-使用-为变量赋初始值"><a href="#JavaScript-使用-为变量赋初始值" class="headerlink" title="JavaScript 使用=为变量赋初始值"></a>JavaScript 使用=为变量赋初始值</h2><p>通常地我们会在initialize初始化声明变量的时候就会给变量赋一个初始值。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> myVar = <span class="number">0</span>;</span><br></pre></td></tr></table></figure></p>
-<p>创建一个名为 myVar 的变量并指定初始值为 0。</p>
-<h2 id="理解JavaScript未定义变量"><a href="#理解JavaScript未定义变量" class="headerlink" title="理解JavaScript未定义变量"></a>理解JavaScript未定义变量</h2><p>当 JavaScript 中的变量被声明的时候，它们的初始值为 undefined。如果对一个值为 undefined 的变量进行运算操作的时候，那么结果将会是 NaN，NaN 的意思是 “Not a Number”。如果将一个没有 定义 的变量跟字符串进行连接的时候，你将获得一个字符串”undefined”。</p>
-<h2 id="理解JavaScript变量的大小写敏感性"><a href="#理解JavaScript变量的大小写敏感性" class="headerlink" title="理解JavaScript变量的大小写敏感性"></a>理解JavaScript变量的大小写敏感性</h2><p>在 JavaScript 中所有的变量都是大小写敏感的。这意味着你要区分大写字母和小写字母。</p>
-<p>MYVAR与MyVar和myvar 是截然不同的变量。这就有可能导致多个不同的变量却有着有相似的名字。正是由于以上原因所以强烈地建议你, 不要使用这一特性。（尽量避免设置名字相近难以区分的变量名）</p>
-<p>最佳实践<br>使用 驼峰命名法 来设置一个 Javascript 变量，在 驼峰命名法 中，变量名的第一个单词的首写字母小写，后面的单词的第一个字母均为大写。</p>
-<p>举个栗子:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> someVariable;</span><br><span class="line"><span class="keyword">var</span> anotherVariableName;</span><br><span class="line"><span class="keyword">var</span> thisVariableNameIsTooLong;</span><br></pre></td></tr></table></figure></p>
-<h2 id="JavaScript加减乘除法运算"><a href="#JavaScript加减乘除法运算" class="headerlink" title="JavaScript加减乘除法运算"></a>JavaScript加减乘除法运算</h2><p>Number 是JavaScript中的数据类型，表示数字数据。<br>现在让我们尝试在JavaScript中做加法运算。</p>
-<p>JavaScript 中使用 + 运算符来让两个数字执行加法运算。</p>
-<p>举个栗子<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">myVar = <span class="number">5</span> + <span class="number">10</span>; <span class="comment">// 等于 15,加减乘除相同，只需替换符号</span></span><br></pre></td></tr></table></figure></p>
-<p>任务<br>改变数字 0 让变量 sum 的值为 20.</p>
-<h2 id="JavaScript自增运算"><a href="#JavaScript自增运算" class="headerlink" title="JavaScript自增运算++"></a>JavaScript自增运算++</h2><p>使用 ++ 运算符，我们可以轻易地对变量进行自增或者+1运算。</p>
-<p>i++;</p>
-<p>等效于</p>
-<p>i = i + 1;</p>
-<p>提示<br>i++;这种写法，省去了使用=运算符的必要。</p>
-<h2 id="JavaScript自减运算–"><a href="#JavaScript自减运算–" class="headerlink" title="JavaScript自减运算–"></a>JavaScript自减运算–</h2><p>使用自减运算符符号 – ，你可以轻易地对一个变量执行 自减 或者-1操作。</p>
-<p>i–;</p>
-<p>等效于</p>
-<p>i = i - 1;</p>
-<p>提示<br>i–;这种写法，省去了使用=运算符的必要。</p>
-<h2 id="JavaScript浮点数"><a href="#JavaScript浮点数" class="headerlink" title="JavaScript浮点数"></a>JavaScript浮点数</h2><p>我们可以把小数存储到变量中。小数也被称作 浮点数 。</p>
-<p>提示<br>不是所有的实数都可以用 浮点数 来表示。因为可能存在四舍五入的错误，详情在这儿。</p>
-<h2 id="JavaScript小数乘法运算"><a href="#JavaScript小数乘法运算" class="headerlink" title="JavaScript小数乘法运算"></a>JavaScript小数乘法运算</h2><p>在 JavaScript 中，你可以用小数进行计算，就像整数一样。</p>
-<p>让我们把两个小数相乘，并得到它们相乘的结果。<br>举个栗子：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> product = <span class="number">2.0</span> * <span class="number">2.5</span>;</span><br></pre></td></tr></table></figure></p>
-<h2 id="JavaScript小数的除法运算"><a href="#JavaScript小数的除法运算" class="headerlink" title="JavaScript小数的除法运算"></a>JavaScript小数的除法运算</h2><p>举个栗子：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> quotient = <span class="number">4.4</span> / <span class="number">2.0</span>;</span><br></pre></td></tr></table></figure></p>
-<h2 id="JavaScript取余运算"><a href="#JavaScript取余运算" class="headerlink" title="JavaScript取余运算%"></a>JavaScript取余运算%</h2><p>使用%运算符来对两个数字进行求余运算。</p>
-<p>举个栗子<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">5</span> % <span class="number">2</span> = <span class="number">1</span></span><br></pre></td></tr></table></figure></p>
-<p>用法<br>在数学中，看一个数是奇数还是偶数，只需要看这个数除以2得到的余数是0还是1。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">17</span> % <span class="number">2</span> = <span class="number">1</span> (<span class="number">17</span> is 奇数)    </span><br><span class="line"><span class="number">48</span> % <span class="number">2</span> = <span class="number">0</span> (<span class="number">48</span> is 偶数)</span><br></pre></td></tr></table></figure></p>
-<h2 id="JavaScript-赋值操作"><a href="#JavaScript-赋值操作" class="headerlink" title="JavaScript +=赋值操作"></a>JavaScript +=赋值操作</h2><p>在编程当中，通常通过赋值来修改变量的内容。请记住，先计算=右边，然后把计算出来的结果赋给左边。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">myVar = myVar + <span class="number">5</span>;</span><br></pre></td></tr></table></figure></p>
-<p>以上是最常见的运算赋值语句，先运算、再赋值。</p>
-<p>还有一类操作符是一步到位合并了运算与赋值的操作。</p>
-<p>这类运算符的其中一种就是 += 运算符。</p>
-<p><strong>myVar += 5</strong>; 也是把数值 5 加到变量 myVar上。</p>
-<p><strong>加减乘除相同，只需替换符号。</strong></p>
-<h2 id="JavaScript-转义字符串中的引号"><a href="#JavaScript-转义字符串中的引号" class="headerlink" title="JavaScript 转义字符串中的引号"></a>JavaScript 转义字符串中的引号</h2><p>当你定义一个字符串时，你必须以单引号或双引号作为开头和结尾。那么当你需要在字符串中使用一个: “ 或者 ‘ 时该怎么办呢?</p>
-<p>在 JavaScript 中，你可以通过在引号前面使用 反斜杠 () 来转义引号。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> sampleStr = <span class="string">"Alan said, \"Peter is learning JavaScript\"."</span>;</span><br></pre></td></tr></table></figure></p>
-<p>这标志着提示 JavaScript 该单引号或双引号并不是字符串的结尾，而是出现在字符串内的字符。所以，如果你要打印字符串到控制台，你将得到：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Alan said, <span class="string">"Peter is learning JavaScript"</span>.</span><br></pre></td></tr></table></figure></p>
-<h2 id="JavaScript-使用单引号引用字符串"><a href="#JavaScript-使用单引号引用字符串" class="headerlink" title="JavaScript 使用单引号引用字符串"></a>JavaScript 使用单引号引用字符串</h2><p>在 JavaScript 中的 字符串 要用单引号或双引号来包裹它，只要你在开始和结束都使用相同类型的引号，单引号和双引号的功能在JavaScript中是相同的。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"This string has \"double quotes\" in it"</span></span><br></pre></td></tr></table></figure></p>
-<p>当我们需要在字符串中使用与开头结尾相同的引号时，我们需要对引号进行 转义 。如果你有很多双引号的字符串，使用转义字符可能导致难以阅读。这时候可以使用单引号。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">'This string has "double quotes" in it. And "probably" lots of them.'</span></span><br></pre></td></tr></table></figure></p>
-<h2 id="JavaScript-转义字符串中的特殊符号"><a href="#JavaScript-转义字符串中的特殊符号" class="headerlink" title="JavaScript 转义字符串中的特殊符号"></a>JavaScript 转义字符串中的特殊符号</h2><p>字符串中的转义序列</p>
-<p>引号不是字符串中唯一的可以被转义字符。下面是常见的转义序列列表:<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">Code	Output  </span><br><span class="line">\<span class="string">'	单引号  </span></span><br><span class="line"><span class="string">\"	双引号  </span></span><br><span class="line"><span class="string">\\	反斜杠符  </span></span><br><span class="line"><span class="string">\n	换行符  </span></span><br><span class="line"><span class="string">\r	回车符  </span></span><br><span class="line"><span class="string">\t	制表符  </span></span><br><span class="line"><span class="string">\b	退格符  </span></span><br><span class="line"><span class="string">\f	换页符  </span></span><br><span class="line"><span class="string">注意，如果你想要显示一个反斜杠就必须要转义它。</span></span><br></pre></td></tr></table></figure></p>
-<h2 id="JavaScript字符串连接方式"><a href="#JavaScript字符串连接方式" class="headerlink" title="JavaScript字符串连接方式"></a>JavaScript字符串连接方式</h2><p>在 JavaScript 中，当 + 运算符与 字符串 一起使用的时候，它被称作 连接 运算符。你可以通过和其他字符串连接 来创建一个新的字符串。</p>
-<p>举个栗子<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">'My name is Alan,'</span> + <span class="string">' I concatenate.'</span></span><br></pre></td></tr></table></figure></p>
-<p><strong>注意:</strong><br>注意空格。连接操作不会添加两个字符串之外的空格，所以想加上空格的话，你需要自己在字符串里面添加。<br><strong>举个栗子：</strong><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> ourStr = <span class="string">"I come first. "</span> + <span class="string">"I come second."</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Only change code below this line</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> myStr = <span class="string">"This is the start."</span>+<span class="string">" This is the end."</span>;</span><br></pre></td></tr></table></figure></p>
-<h2 id="JavaScript-连接字符串操作"><a href="#JavaScript-连接字符串操作" class="headerlink" title="JavaScript +=连接字符串操作"></a>JavaScript +=连接字符串操作</h2><p>我们还可以使用 += 运算符来将字符串 连接 到现有字符串变量的末尾。对于那些非常长的字符串来说，这是十分有用的。</p>
-<p><strong>注意</strong><br>注意空格。连接操作不会添加两个字符串以外的空格，所以如果想要加上空格的话，你需要自己在字符串里面添加。<br><strong>举个栗子：</strong><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> ourStr = <span class="string">"I come first. "</span>;</span><br><span class="line">ourStr += <span class="string">"I come second."</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Only change code below this line</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> myStr= <span class="string">"This is the first sentence."</span>;</span><br><span class="line">myStr += <span class="string">" This is the second sentence."</span>;</span><br></pre></td></tr></table></figure></p>
-<h2 id="JavaScript-使用变量连接字符串"><a href="#JavaScript-使用变量连接字符串" class="headerlink" title="JavaScript 使用变量连接字符串"></a>JavaScript 使用变量连接字符串</h2><p>有时候你需要创建一个填字风格的字符串。</p>
-<p>通过使用连接运算符 + ，你可以插入一个或多个变量来组成一个字符串。<br><strong>举个栗子：</strong><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> ourName = <span class="string">"Free Code Camp"</span>;</span><br><span class="line"><span class="keyword">var</span> ourStr = <span class="string">"Hello, our name is "</span> + ourName + <span class="string">", how are you?"</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Only change code below this line</span></span><br><span class="line"><span class="keyword">var</span> myName = <span class="string">"Li Shu Qiang"</span>;</span><br><span class="line"><span class="keyword">var</span> myStr = <span class="string">"My name is"</span> + myName + <span class="string">" and I am swell!"</span>;</span><br></pre></td></tr></table></figure></p>
-<h2 id="JavaScript-追加变量到字符串上"><a href="#JavaScript-追加变量到字符串上" class="headerlink" title="JavaScript 追加变量到字符串上"></a>JavaScript 追加变量到字符串上</h2><p>我们不仅可以创建出多行的字符串，还可以使用加等号(+=)运算符来追加变量到字符串上。<br><strong>举个离子：</strong><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> anAdjective = <span class="string">"awesome!"</span>;</span><br><span class="line"><span class="keyword">var</span> ourStr = <span class="string">"Free Code Camp is "</span>;</span><br><span class="line">ourStr += anAdjective;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Only change code below this line</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> someAdjective = <span class="string">"lsq"</span>;</span><br><span class="line"><span class="keyword">var</span> myStr = <span class="string">"Learning to code is "</span>;</span><br><span class="line">myStr += someAdjective;</span><br></pre></td></tr></table></figure></p>
-<h2 id="JavaScript-获取字符串的长度"><a href="#JavaScript-获取字符串的长度" class="headerlink" title="JavaScript 获取字符串的长度"></a>JavaScript 获取字符串的长度</h2><p>你可以通过在字符串变量或字符串后面写上 .length 来获得变量中string （字符串）值的长度。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">"Alan Peter"</span>.length; <span class="comment">// 10</span></span><br></pre></td></tr></table></figure></p>
-<p>例如，我们创建了一个变量 var firstName = “Charles”，我们就可以通过使用 firstName.length 来获得 “Charles” 字符串的长度。<br><strong>举个栗子：</strong><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lastNameLength = lastName.length;</span><br></pre></td></tr></table></figure></p>
-<h2 id="JavaScript-使用中括号获取字符串中的第一个字符"><a href="#JavaScript-使用中括号获取字符串中的第一个字符" class="headerlink" title="JavaScript 使用中括号获取字符串中的第一个字符"></a>JavaScript 使用中括号获取字符串中的第一个字符</h2><p>括号符号是一种在字符串中的特定索引处获取字符的方法。</p>
-<p>() ：小括号。</p>
-<p>[] ：中括号</p>
-<p>{}：大括号</p>
-<p>JavaScript中只有字符串类型，没有字符类型。</p>
-<p>如果要获取字符串中的某个字符，我们需要通过[索引] 来获得对应的字符。</p>
-<p>大多数现代编程语言，如JavaScript，不同于人类从1开始计数。它们是从0开始计数，这被称为 基于零 的索引。</p>
-<p>例如, 在单词 “Charles” 中索引0上的字符为 “C”，所以在 var firstName = “Charles” 中，你可以使用 firstName[0] 来获得第一个位置上的字符。<br><strong>举个栗子：</strong><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> firstLetterOfFirstName = <span class="string">""</span>;</span><br><span class="line"><span class="keyword">var</span> firstName = <span class="string">"Ada"</span>;</span><br><span class="line"></span><br><span class="line">firstLetterOfFirstName = firstName[<span class="number">0</span>];</span><br><span class="line"></span><br><span class="line"><span class="comment">// Setup</span></span><br><span class="line"><span class="keyword">var</span> firstLetterOfLastName = <span class="string">""</span>;</span><br><span class="line"><span class="keyword">var</span> lastName = <span class="string">"Lovelace"</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Only change code below this line</span></span><br><span class="line">firstLetterOfLastName = lastName[<span class="number">0</span>];</span><br></pre></td></tr></table></figure></p>
-<h2 id="理解JavaScript字符串的不可变性"><a href="#理解JavaScript字符串的不可变性" class="headerlink" title="理解JavaScript字符串的不可变性"></a>理解JavaScript字符串的不可变性</h2><p>在 JavaScript 中，字符串 的值是 不可变的，这意味着一旦字符串被创建就不能被改变。</p>
-<p>例如，下面的代码：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> myStr = <span class="string">"Bob"</span>;</span><br><span class="line">myStr[<span class="number">0</span>] = <span class="string">"J"</span>;</span><br></pre></td></tr></table></figure></p>
-<p>是不会把变量 myStr 的值改变成 “Job” 的，因为变量 myStr 是不可变的。注意，这 并不 意味着 myStr 永远不能被改变，只是字符串字面量 string literal 的各个字符不能被改变。改变 myStr 中的唯一方法是重新给它赋一个值，就像这样：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> myStr = <span class="string">"Bob"</span>;</span><br><span class="line">myStr = <span class="string">"Job"</span>;</span><br></pre></td></tr></table></figure></p>
-<h2 id="JavaScript-使用中括号索引查找字符串中的第N个字符"><a href="#JavaScript-使用中括号索引查找字符串中的第N个字符" class="headerlink" title="JavaScript 使用中括号索引查找字符串中的第N个字符"></a>JavaScript 使用中括号索引查找字符串中的第N个字符</h2><p>你也可以使用 [索引]来获得一个字符串中的某个位置的字符。</p>
-<p>请记住，计算机是从 0 开始计数，所以获取第一个字符的索引实际上是[0]。<br><strong>举个栗子：</strong><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> firstName = <span class="string">"Ada"</span>;</span><br><span class="line"><span class="keyword">var</span> secondLetterOfFirstName = firstName[<span class="number">1</span>];</span><br></pre></td></tr></table></figure></p>
-<h2 id="JavaScript-使用中括号索引查找字符串中的最后一个字符"><a href="#JavaScript-使用中括号索引查找字符串中的最后一个字符" class="headerlink" title="JavaScript 使用中括号索引查找字符串中的最后一个字符"></a>JavaScript 使用中括号索引查找字符串中的最后一个字符</h2><p>为了得到一个字符串的最后一个字符，你可以获取该字符串的长度并减一来作为最后一个字符的索引。</p>
-<p>例如，在 var firstName = “Charles” 中，你可以这样操作<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">firstName[firstName.length - <span class="number">1</span>]</span><br></pre></td></tr></table></figure></p>
-<p>来得到字符串的最后的一个字符。<br><strong>举个栗子：</strong><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> firstName = <span class="string">"Ada"</span>;</span><br><span class="line"><span class="keyword">var</span> lastLetterOfFirstName = firstName[firstName.length - <span class="number">1</span>];</span><br></pre></td></tr></table></figure></p>
-<p>##JavaScript 使用中括号索引查找字符串中倒数第N个字符<br>我们既然可以获取字符串的最后一个字符，也可以用相同的方法获取字符串的倒数第N个字符。</p>
-<p>例如，你可以这样 firstName[firstName.length - 3] 操作来获得 var firstName = “Charles” 字符串中的倒数第三个字符。<br><strong>举个栗子：</strong><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> firstName = <span class="string">"Ada"</span>;</span><br><span class="line"><span class="keyword">var</span> thirdToLastLetterOfFirstName = firstName[firstName.length - <span class="number">3</span>];</span><br></pre></td></tr></table></figure></p>
-<h2 id="Javascript-字符串操作综合训练"><a href="#Javascript-字符串操作综合训练" class="headerlink" title="Javascript 字符串操作综合训练"></a>Javascript 字符串操作综合训练</h2><p>填词造句</p>
-<p>现在我们将结合之前学习的字符串相关知识，来玩一个填字风格的文字游戏。</p>
-<p>通过使用提供的变量：名词myNoun、形容词myAdjective、动词myVerb、副词myAdverb，来创建一个新的字符串并赋值到 result。</p>
-<p>此外，除了所提供的词之外，你还需要添加额外的连接字符串。</p>
-<p>例如：result = myNum+’ aa ‘+myNun;使用+连接字符串，并且中间用额外字符” aa “来隔开，注意间隔字母两边要用空格，你也可以使用，来分割<br><strong>举个栗子：</strong><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">wordBlanks</span>(<span class="params">myNoun, myAdjective, myVerb, myAdverb</span>) </span>&#123;</span><br><span class="line"><span class="keyword">var</span> result = <span class="string">""</span>;</span><br><span class="line"><span class="comment">// Your code below this line</span></span><br><span class="line">result=myNoun+<span class="string">","</span>+myAdjective+<span class="string">","</span>+myVerb+<span class="string">","</span>+ myAdverb;</span><br><span class="line"><span class="comment">// Your code above this line</span></span><br><span class="line"><span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Change the words here to test your function</span></span><br><span class="line">wordBlanks(<span class="string">"dog"</span>, <span class="string">"big"</span>, <span class="string">"ran"</span>, <span class="string">"quickly"</span>);</span><br></pre></td></tr></table></figure></p>
-<h2 id="Javascript-数组操作"><a href="#Javascript-数组操作" class="headerlink" title="Javascript 数组操作"></a>Javascript 数组操作</h2><p>通过 数组，我们可以将多个数据存储于同一个变量中。</p>
-<p>通过左括号[开始定义一个数组，以右括号]结束定义，并把每个数据条目之间用逗号隔开，就像这样：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> sandwich = [<span class="string">"peanut butter"</span>, <span class="string">"jelly"</span>, <span class="string">"bread"</span>]。</span><br></pre></td></tr></table></figure></p>
-<p><strong>举个栗子:</strong><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> myArray = [<span class="string">"China"</span>, <span class="number">1998</span>];</span><br></pre></td></tr></table></figure></p>
-<h2 id="Javascript-多维数组操作"><a href="#Javascript-多维数组操作" class="headerlink" title="Javascript 多维数组操作"></a>Javascript 多维数组操作</h2><p>你也可以在数组中包含其他数组，就像这样: [[“Bulls”, 23], [“White Sox”, 45]]。这被称为一个 多维数组。<br><strong>举个栗子：</strong><br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> myArray = [[<span class="string">"China"</span>,<span class="number">1998</span>],[<span class="string">"China"</span>,<span class="number">2018</span>]];</span><br></pre></td></tr></table></figure></p>
-
-      
-    </div>
-
-  </div>
-
-  <div class="article-footer">
-    <div class="article-meta pull-left">
-
-    
-
-    
-    
-
-    <span class="post-tags">
-      <i class="icon-tags"></i>
-        <a href="/tags/前端/">前端</a>
-    </span>
-    
-
-    </div>
-
-    
-  </div>
-</article>
-
-
-
-  <article>
-
-  
-    
-    <h3 class="article-title"><a href="/2018/04/23/什么是JavaScript？/"><span>什么是JavaScript？</span></a></h3>
-    
-  
-
-  <div class="article-top-meta">
-    <span class="posted-on">
-      <a href="/2018/04/23/什么是JavaScript？/" rel="bookmark">
-        <time class="entry-date published" datetime="2018-04-23T04:52:19.000Z">
-          2018-04-23
-        </time>
-      </a>
-    </span>
-  </div>
-
-
-  
-
-  <div class="article-content">
-    <div class="entry">
-      
-        <h2 id="什么是JavaScript"><a href="#什么是JavaScript" class="headerlink" title="什么是JavaScript?"></a>什么是JavaScript?</h2><p>JavaScript是一种基于对象和事件驱动的客户端脚本语言，最初的设计是为了检验HTML表单输入的正确性，起源于Netscape公司的Livescript语言。</p>
-<h2 id="JavaScript发展史"><a href="#JavaScript发展史" class="headerlink" title="JavaScript发展史"></a>JavaScript发展史</h2><p>JavaScript诞生于1995年。起初它的主要目的是处理以前由服务器端负责的一些表单验证。当时走在技术革新最前沿的Netscape（网景）公司，决定着手开发一种客户端语言，用来处理这种装简单的验证。当时就职于Netscape公司的布兰登·艾奇开始着手计划将1995年2月发布的LiveScript同时在浏览器和服务器中使用。为了赶在发布日期前完成LiveScript的开发，Netscape与Sun公司成立了一个开发联盟。而此时，Netscape为了搭上媒体热炒Java的顺风车，临时把LiveScript改名为JavaScript，所以从本质上来说JavaScript和Java没什么关系。</p>
-<p><a href="https://javascript.ruanyifeng.com/introduction/history.html" title="JavaScript发展史" target="_blank" rel="noopener">JavaScript发展史</a></p>
-<h2 id="JavaScript的组成"><a href="#JavaScript的组成" class="headerlink" title="JavaScript的组成"></a>JavaScript的组成</h2><p>完整的JavaScript是由ECMAScript（语法）、Browser Objects（DOM、BOM）（特性）组成的。</p>
-<ul>
-<li>ECMAScript （ECMAScript和JavaScript的关系是，前者是后者的规格（标准），后者是前者的一种实现） <a href="http://blog.csdn.net/liona_koukou/article/details/52228389" title="详解点我" target="_blank" rel="noopener">详解点我</a></li>
-<li>DOM（提供访问和操作页面内容的访问和接口）<a href="https://baike.baidu.com/item/DOM/50288?fr=aladdin" title="DOM详解点我" target="_blank" rel="noopener">DOM详解点我</a></li>
-<li>BOM（提高浏览器交互的方法和接口）<a href="https://www.cnblogs.com/2010master/p/5824215.html" title="BOM详解点我" target="_blank" rel="noopener">BOM详解点我</a>  </li>
-</ul>
-<h2 id="在HTML中如何使用？"><a href="#在HTML中如何使用？" class="headerlink" title="在HTML中如何使用？"></a>在HTML中如何使用？</h2><p>内部方式：<head><meta name="generator" content="Hexo 3.8.0">和</head><body>和标签中嵌入<br>外部方式：在<head><meta name="generator" content="Hexo 3.8.0">标签引入script</head></body></p>
-<h2 id="Javascript的注释和分号"><a href="#Javascript的注释和分号" class="headerlink" title="Javascript的注释和分号"></a>Javascript的注释和分号</h2><p>//单行注释<br>/**/多行注释</p>
-<p>语句结束使用分号，如果省略，则由解析器确定语句的结尾。</p>
-<h2 id="Javascript的语法"><a href="#Javascript的语法" class="headerlink" title="Javascript的语法"></a>Javascript的语法</h2><p>ECMAScript中的一切（变量、函数名和操作符）都区分大小写</p>
-<h2 id="Javascript"><a href="#Javascript" class="headerlink" title="Javascript"></a>Javascript</h2><p>1、什么是标识符？<br>变量、函数、属性的名字，或者函数的参数<br>2、标识符的命名规则<br> （1）由字母、数字、下划线（_）或者美元符号（$）组成<br> （2）不能以数字开头<br> （3）不能使用关键字、保留字等作为标识符。</p>
-<h2 id="什么是变量？"><a href="#什么是变量？" class="headerlink" title="什么是变量？"></a>什么是变量？</h2><p> ECMAScript的变量是松散类型<br> 松散类型：可以用来保存任何类型的数据<br> 换句话说，每个变量仅仅是一个用于保存值的占位符而已。 ## 变量的声明与赋值<br> 1、变量声明：<br> 变量的声明要使用var操作符；  语法:var变量名<br> 2、变量赋值：<br> 声明的同时赋值：var变量名=值<br> 先声明后赋值  变量名=值<br> 说明：<br> 1、省略var声明的变量是全局变量<br> 2、不推荐省略var操作符来定义全局变量  声明示例：<br> var 声明名称并赋值：<br> <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> name_01; name_01=<span class="string">"marry"</span></span><br></pre></td></tr></table></figure></p>
- <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span>声明并赋值 <span class="keyword">var</span> name_01=<span class="string">"marry"</span></span><br></pre></td></tr></table></figure>
-<p> 提示：一次声明多个变量 ：变量之间逗号隔开</p>
-
-      
-    </div>
-
-  </div>
-
-  <div class="article-footer">
-    <div class="article-meta pull-left">
-
-    
-
-    
-
-    </div>
-
-    
-  </div>
-</article>
-
-
-
-
-<nav class="pagination">
-  
-  
-  <a href="/page/2/" class="pagination-next">Next</a>
-  
-</nav>
-    </main>
-
-    <footer class="site-footer">
-  <p class="site-info">
-    Proudly powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and
-    Theme by <a href="https://github.com/CodeDaraW/Hacker" target="_blank">Hacker</a>
-    <br>
-    
-    &copy; 2018 oneShenxin
-    
-  </p>
-</footer>
-    
-  </div>
+<div class="site-nav-toggle" id="site-nav-toggle">
+    <button>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+        <span class="btn-bar"></span>
+    </button>
 </div>
+
+<div class="index-about">
+    <i> sometimes code, sometimes design </i>
+</div>
+
+<div class="index-container">
+    
+    <div class="index-left">
+        
+<div class="nav" id="nav">
+    <div class="avatar-name">
+        <div class="avatar">
+            <img src="/img/Chuxin.png">
+        </div>
+        <div class="name">
+            <i>oneShenxin</i>
+        </div>
+    </div>
+    <div class="contents" id="nav-content">
+        <ul>
+            <li class="active">
+                <a href="/">
+                    <i class="iconfont icon-shouye1"></i>
+                    <span>主页</span>
+                </a>
+            </li>
+            <li>
+                <a href="/tags">
+                    <i class="iconfont icon-biaoqian1"></i>
+                    <span>标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="/archive">
+                    <i class="iconfont icon-guidang2"></i>
+                    <span>存档</span>
+                </a>
+            </li>
+            <li>
+                <a href="/about/">
+                    <i class="iconfont icon-guanyu2"></i>
+                    <span>关于</span>
+                </a>
+            </li>
+            
+            <li>
+                <a id="search">
+                    <i class="iconfont icon-sousuo1"></i>
+                    <span>搜索</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    
+</div>
+
+
+<div class="search-field" id="search-field">
+    <div class="search-container">
+        <div class="search-input">
+            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
+            <input id="search-input">
+            <span id="begin-search">搜索</span>
+        </div>
+        <div class="search-result-container" id="search-result-container">
+
+        </div>
+    </div>
+</div>
+        <div class="index-about-mobile">
+            <i> sometimes code, sometimes design </i>
+        </div>
+    </div>
+    
+    <div class="index-middle">
+        <!-- Main Content -->
+        
+<div class="post-preview-container" style="min-height: 576px">
+    
+    <div class="post-preview">
+        <div class="post-time">2018-11-26</div>
+        <div class="post-info">
+            <a href="/2018/11/26/2018-11-26阅读笔记/">
+                <h3>
+                    2018-11-26阅读笔记
+                </h3>
+            </a>
+            <p>
+                
+                <span>/</span>
+                
+                <a class="tag" href="/tags/#C语言从入门到精通" title="C语言从入门到精通">C语言从入门到精通</a>
+                <span>/</span>
+                
+                
+            </p>
+        </div>
+    </div>
+    
+    <div class="post-preview">
+        <div class="post-time">2018-11-25</div>
+        <div class="post-info">
+            <a href="/2018/11/25/2018-11-25阅读笔记/">
+                <h3>
+                    2018-11-25阅读笔记
+                </h3>
+            </a>
+            <p>
+                
+                <span>/</span>
+                
+                <a class="tag" href="/tags/#C语言从入门到精通" title="C语言从入门到精通">C语言从入门到精通</a>
+                <span>/</span>
+                
+                
+            </p>
+        </div>
+    </div>
+    
+    <div class="post-preview">
+        <div class="post-time">2018-11-23</div>
+        <div class="post-info">
+            <a href="/2018/11/23/生活/">
+                <h3>
+                    生活
+                </h3>
+            </a>
+            <p>
+                
+                <span>/</span>
+                
+                <a class="tag" href="/tags/#手拍" title="手拍">手拍</a>
+                <span>/</span>
+                
+                
+            </p>
+        </div>
+    </div>
+    
+    <div class="post-preview">
+        <div class="post-time">2018-04-23</div>
+        <div class="post-info">
+            <a href="/2018/04/23/单词记忆/">
+                <h3>
+                    单词记忆
+                </h3>
+            </a>
+            <p>
+                
+            </p>
+        </div>
+    </div>
+    
+    <div class="post-preview">
+        <div class="post-time">2018-04-23</div>
+        <div class="post-info">
+            <a href="/2018/04/23/2316计算机应用技术之思维导图/">
+                <h3>
+                    2316计算机应用技术之思维导图
+                </h3>
+            </a>
+            <p>
+                
+                <span>/</span>
+                
+                <a class="tag" href="/tags/#自学考试" title="自学考试">自学考试</a>
+                <span>/</span>
+                
+                
+            </p>
+        </div>
+    </div>
+    
+    <div class="post-preview">
+        <div class="post-time">2018-04-23</div>
+        <div class="post-info">
+            <a href="/2018/04/23/第一章-计算机及其应用概述/">
+                <h3>
+                    第一章 计算机及其应用概述
+                </h3>
+            </a>
+            <p>
+                
+                <span>/</span>
+                
+                <a class="tag" href="/tags/#自学考试" title="自学考试">自学考试</a>
+                <span>/</span>
+                
+                
+            </p>
+        </div>
+    </div>
+    
+    <div class="post-preview">
+        <div class="post-time">2018-04-23</div>
+        <div class="post-info">
+            <a href="/2018/04/23/W3Cschool-JavaScript基础篇/">
+                <h3>
+                    W3Cschool-JavaScript基础篇
+                </h3>
+            </a>
+            <p>
+                
+                <span>/</span>
+                
+                <a class="tag" href="/tags/#前端" title="前端">前端</a>
+                <span>/</span>
+                
+                
+            </p>
+        </div>
+    </div>
+    
+    <div class="post-preview">
+        <div class="post-time">2018-04-23</div>
+        <div class="post-info">
+            <a href="/2018/04/23/什么是JavaScript？/">
+                <h3>
+                    什么是JavaScript？
+                </h3>
+            </a>
+            <p>
+                
+            </p>
+        </div>
+    </div>
+    
+</div>
+<ul class="pager">
+    
+    
+    <li class="next">
+        <a href="/page/2/">Older Posts &rarr;</a>
+    </li>
+    
+</ul>
+
+    </div>
+</div>
+
+
+<footer class="footer">
+    <ul class="list-inline text-center">
+        
+        <li>
+            <a target="_blank" href="https://twitter.com/name">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-twitter"></i>
+                            </span>
+            </a>
+        </li>
+        
+        
+        <li>
+            <a target="_blank" href="https://www.zhihu.com/people/身心">
+                            <span class="fa-stack fa-lg">
+                                 <i class="iconfont icon-zhihu"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+        <li>
+            <a target="_blank" href="http://weibo.com/one-Shenxin">
+                            <span class="fa-stack fa-lg">
+                                  <i class="iconfont icon-weibo"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+        <li>
+            <a target="_blank" href="https://www.facebook.com/name">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-facebook"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+        <li>
+            <a target="_blank" href="https://github.com/lishuqiang">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-github"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+        
+        <li>
+            <a target="_blank" href="https://www.linkedin.com/in/name">
+                            <span class="fa-stack fa-lg">
+                                <i class="iconfont icon-linkedin"></i>
+                            </span>
+            </a>
+        </li>
+        
+
+    </ul>
+    
+    <p>
+        <span>/</span>
+        
+        <span><a href="https://www.10000h.top">10000H</a></span>
+        <span>/</span>
+        
+        <span><a href="https://niexiaotao.com">Xiaotao&#39;s Page</a></span>
+        <span>/</span>
+        
+        <span><a href="#">It helps SEO</a></span>
+        <span>/</span>
+        
+    </p>
+    
+    <p>
+        <span id="busuanzi_container_site_pv">
+            <span id="busuanzi_value_site_pv"></span>PV
+        </span>
+        <span id="busuanzi_container_site_uv">
+            <span id="busuanzi_value_site_uv"></span>UV
+        </span>
+        Created By <a href="https://hexo.io/">Hexo</a>  Theme <a href="https://github.com/aircloud/hexo-theme-aircloud">AirCloud</a></p>
+</footer>
+
+
+
+
 </body>
+
+<script>
+    // We expose some of the variables needed by the front end
+    window.hexo_search_path = "search.json"
+    window.hexo_root = "/"
+    window.isPost = false
+</script>
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="/js/index.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
 </html>
