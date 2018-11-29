@@ -5,15 +5,13 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="2018-11-28阅读笔记, oneShenxin">
-    <meta name="description" content="4.2.3强制类型转换
-
-cChar=(char)fFloat;       
-iShort=(short)fFloat;
-iInt=(int)fFloat;
-  
-¶4.3.1算术运算符
-算术运算符包括两个单目运算符（正和负）和5个双目运">
+    <meta name="keywords" content="2018-11-29阅读笔记, oneShenxin">
+    <meta name="description" content="¶字符数据输出
+putchar(&#39;A&#39;)
+¶字符数据输入
+从输入设备得到的值，例如：cChar=getchar(); 注意：
+putchar(getchar());
+意思是getchar函数作为putchar函数的参数，通过getchar函">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -21,7 +19,7 @@ iInt=(int)fFloat;
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>2018-11-28阅读笔记 | oneShenxin</title>
+    <title>2018-11-29阅读笔记 | oneShenxin</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -252,13 +250,13 @@ iInt=(int)fFloat;
 
 
 
-<div class="bg-cover post-cover" style="background-image: url('/medias/featureimages/21.jpg')">
+<div class="bg-cover post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        2018-11-28阅读笔记
+                        2018-11-29阅读笔记
                     </div>
                 </div>
             </div>
@@ -288,216 +286,163 @@ iInt=(int)fFloat;
                 
 
                 <span class="post-date">
-                    <i class="fa fa-clock-o fa-fw"></i>2018-11-28
+                    <i class="fa fa-clock-o fa-fw"></i>2018-11-29
                 </span>
             </div>
         </div>
         <hr>
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1>4.2.3强制类型转换</h1>
-<code>
-cChar=(char)fFloat;       <br>
-iShort=(short)fFloat;<br>
-iInt=(int)fFloat;
-</code>  <br>
-<h2 id="4-3-1算术运算符"><a class="header-anchor" href="#4-3-1算术运算符">¶</a>4.3.1算术运算符</h2>
-<p>算术运算符包括两个单目运算符（正和负）和5个双目运算符（即乘法、除法、取模、加法和减法）。具体符号和对应功能如下图：</p>
+                <h2 id="字符数据输出"><a class="header-anchor" href="#字符数据输出">¶</a>字符数据输出</h2>
+<p><code>putchar('A')</code></p>
+<h2 id="字符数据输入-br"><a class="header-anchor" href="#字符数据输入-br">¶</a>字符数据输入<br></h2>
+<p>从输入设备得到的值，例如：<code>cChar=getchar();</code> 注意：<br>
+<code>putchar(getchar());</code><br>
+意思是getchar函数作为putchar函数的参数，通过getchar函数从输入设备得到一个字符，然后通过putchar函数将字符输出。</p>
+<h2 id="字符串输入-输出"><a class="header-anchor" href="#字符串输入-输出">¶</a>字符串输入/输出</h2>
+<p><code>puts(&quot;I LOVE CHINA&quot;)</code><br>
+puts函数中&quot;\0&quot;用来判断结束，&quot;\0&quot;称为结束符</p>
+<h3 id="printf函数的格式字符"><a class="header-anchor" href="#printf函数的格式字符">¶</a>printf函数的格式字符</h3>
 <table>
 <thead>
 <tr>
-<th style="text-align:center">符号</th>
-<th style="text-align:center">功能</th>
-<th style="text-align:center">符号</th>
-<th style="text-align:center">功能</th>
+<th style="text-align:center">格式字符</th>
+<th style="text-align:center">功能说明</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center">+</td>
-<td style="text-align:center">单目正</td>
-<td style="text-align:center">%</td>
-<td style="text-align:center">取模</td>
+<td style="text-align:center">d,i</td>
+<td style="text-align:center">以带符号的十进制形式输出整数（整数不输出符号）</td>
+</tr>
+<tr>
+<td style="text-align:center">o</td>
+<td style="text-align:center">以八进制无符号形式输出整数</td>
+</tr>
+<tr>
+<td style="text-align:center">x,X</td>
+<td style="text-align:center">以十六进制无符号形式输出整数。用x输出十六进制数的a~f时，以小写形式输出；用X时，则以大写字母输出</td>
+</tr>
+<tr>
+<td style="text-align:center">u</td>
+<td style="text-align:center">以无符号十进制形式输出整数</td>
+</tr>
+<tr>
+<td style="text-align:center">c</td>
+<td style="text-align:center">以字符形式输出，只输出一个字符</td>
+</tr>
+<tr>
+<td style="text-align:center">s</td>
+<td style="text-align:center">输出字符串</td>
+</tr>
+<tr>
+<td style="text-align:center">f</td>
+<td style="text-align:center">以小数形式输出</td>
+</tr>
+<tr>
+<td style="text-align:center">e,E</td>
+<td style="text-align:center">以指数形式输出实数，用e时指数以“e”表示，用E时指数以“E”表示</td>
+</tr>
+<tr>
+<td style="text-align:center">g，G</td>
+<td style="text-align:center">选用“%f”或“%e”格式中输出宽度较短的一种格式，不输出无意义的0.若以指数形式输出，则指数以大写表示</td>
+</tr>
+</tbody>
+</table>
+<h3 id="printf函数的附加格式说明字符"><a class="header-anchor" href="#printf函数的附加格式说明字符">¶</a>printf函数的附加格式说明字符</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">格式字符</th>
+<th style="text-align:center">功能说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">字母l</td>
+<td style="text-align:center">用于长整型整数，可加在格式字符d、o、x、u前面</td>
+</tr>
+<tr>
+<td style="text-align:center">m(代表一个整数)</td>
+<td style="text-align:center">数据最小宽度</td>
+</tr>
+<tr>
+<td style="text-align:center">n(代表一个整数)</td>
+<td style="text-align:center">对实数，表示输出n位小数；对字符串，表示截取的字符个数</td>
 </tr>
 <tr>
 <td style="text-align:center">-</td>
-<td style="text-align:center">单目负</td>
-<td style="text-align:center">+</td>
-<td style="text-align:center">加法</td>
+<td style="text-align:center">输出的数字或字符在域内向左靠拢</td>
+</tr>
+</tbody>
+</table>
+<h3 id="scanf函数的格式字符"><a class="header-anchor" href="#scanf函数的格式字符">¶</a>scanf函数的格式字符</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">格式字符</th>
+<th style="text-align:center">功能说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">d,i</td>
+<td style="text-align:center">用来输入有符号的十进制整数</td>
+</tr>
+<tr>
+<td style="text-align:center">u</td>
+<td style="text-align:center">用来输入无符号的十进制整数</td>
+</tr>
+<tr>
+<td style="text-align:center">o</td>
+<td style="text-align:center">用来舒服无法好的八进制整数</td>
+</tr>
+<tr>
+<td style="text-align:center">x,X</td>
+<td style="text-align:center">用来输入无符号的十六进制整数（大小写作用是相同的</td>
+</tr>
+<tr>
+<td style="text-align:center">c</td>
+<td style="text-align:center">用来输入单个字符</td>
+</tr>
+<tr>
+<td style="text-align:center">s</td>
+<td style="text-align:center">用来输入字符串</td>
+</tr>
+<tr>
+<td style="text-align:center">f</td>
+<td style="text-align:center">用来输入实型，可以用小数形式或指数形式输入</td>
+</tr>
+<tr>
+<td style="text-align:center">e,E,g,G</td>
+<td style="text-align:center">与f作用相同，e与f、g之间可以相互替换（大小写作用相同）</td>
+</tr>
+</tbody>
+</table>
+<h3 id="scanf函数的附加格式"><a class="header-anchor" href="#scanf函数的附加格式">¶</a>scanf函数的附加格式</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">格式字符</th>
+<th style="text-align:center">功能说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">l</td>
+<td style="text-align:center">用于输入长整型数据（可用于“%ld”“%lo”“lx”“%lu”）以及double型的数据（“%lf”或“%le”)</td>
+</tr>
+<tr>
+<td style="text-align:center">h</td>
+<td style="text-align:center">用于输入短整型数据（可用于“hd”“%ho”“%hx”）</td>
+</tr>
+<tr>
+<td style="text-align:center">n（整数）</td>
+<td style="text-align:center">指定输入数据所占的宽度</td>
 </tr>
 <tr>
 <td style="text-align:center">*</td>
-<td style="text-align:center">乘法</td>
-<td style="text-align:center">-</td>
-<td style="text-align:center">减法</td>
-</tr>
-<tr>
-<td style="text-align:center">/</td>
-<td style="text-align:center">除法</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-</tr>
-</tbody>
-</table>
-<h2 id="4-4-1关系运算符"><a class="header-anchor" href="#4-4-1关系运算符">¶</a>4.4.1关系运算符</h2>
-<p>如图：</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">符号</th>
-<th style="text-align:center">功能</th>
-<th style="text-align:center">符号</th>
-<th style="text-align:center">功能</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">&gt;</td>
-<td style="text-align:center">大于</td>
-<td style="text-align:center">&lt;=</td>
-<td style="text-align:center">小于等于</td>
-</tr>
-<tr>
-<td style="text-align:center">&gt;=</td>
-<td style="text-align:center">大于等于</td>
-<td style="text-align:center">==</td>
-<td style="text-align:center">等于</td>
-</tr>
-<tr>
-<td style="text-align:center">&lt;</td>
-<td style="text-align:center">小于</td>
-<td style="text-align:center">！=</td>
-<td style="text-align:center">不等于</td>
-</tr>
-</tbody>
-</table>
-<h2 id="4-5-1逻辑运算符"><a class="header-anchor" href="#4-5-1逻辑运算符">¶</a>4.5.1逻辑运算符</h2>
-<p>如图：</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">符号</th>
-<th style="text-align:center">功能</th>
-<th style="text-align:center">符号</th>
-<th style="text-align:center">功能</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">&amp;&amp;</td>
-<td style="text-align:center">逻辑与</td>
-<td style="text-align:center"><code>||</code></td>
-<td style="text-align:center">逻辑或</td>
-</tr>
-<tr>
-<td style="text-align:center">!</td>
-<td style="text-align:center">单目逻辑非</td>
-<td style="text-align:center"></td>
-<td style="text-align:center"></td>
-</tr>
-</tbody>
-</table>
-<p>以上逻辑与“&amp;&amp;”和逻辑或“||”都是双目运算符</p>
-<h2 id="4-6-1位逻辑运算符"><a class="header-anchor" href="#4-6-1位逻辑运算符">¶</a>4.6.1位逻辑运算符</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">符号</th>
-<th style="text-align:center">功能</th>
-<th style="text-align:center">符号</th>
-<th style="text-align:center">功能</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">&amp;</td>
-<td style="text-align:center">位逻辑与</td>
-<td style="text-align:center"><code>|</code></td>
-<td style="text-align:center">位逻辑或</td>
-</tr>
-<tr>
-<td style="text-align:center">^</td>
-<td style="text-align:center">位逻辑非</td>
-<td style="text-align:center">~</td>
-<td style="text-align:center">取补</td>
-</tr>
-</tbody>
-</table>
-<h1>4.9小结</h1>
-<p>运算符的优先级和结合性</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">优先级</th>
-<th style="text-align:center">运算符</th>
-<th style="text-align:center">结合性</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">（最高）</td>
-<td style="text-align:center">（）[ ] - &gt;.</td>
-<td style="text-align:center">自左向右</td>
-</tr>
-<tr>
-<td style="text-align:center"></td>
-<td style="text-align:center">！~+±-±*&amp;（type）sizeof</td>
-<td style="text-align:center">自右向左</td>
-</tr>
-<tr>
-<td style="text-align:center"></td>
-<td style="text-align:center">*/%</td>
-<td style="text-align:center">自右向左</td>
-</tr>
-<tr>
-<td style="text-align:center"></td>
-<td style="text-align:center">±</td>
-<td style="text-align:center">自左向右</td>
-</tr>
-<tr>
-<td style="text-align:center"></td>
-<td style="text-align:center">&lt;&lt;&gt;&gt;</td>
-<td style="text-align:center">自左向右</td>
-</tr>
-<tr>
-<td style="text-align:center"></td>
-<td style="text-align:center">&lt;&lt;=&gt;&gt;=</td>
-<td style="text-align:center">自左向右</td>
-</tr>
-<tr>
-<td style="text-align:center"></td>
-<td style="text-align:center">==！=</td>
-<td style="text-align:center">自左向右</td>
-</tr>
-<tr>
-<td style="text-align:center"></td>
-<td style="text-align:center">&amp;</td>
-<td style="text-align:center">自左向右</td>
-</tr>
-<tr>
-<td style="text-align:center"></td>
-<td style="text-align:center">&amp;&amp;</td>
-<td style="text-align:center">自左向右</td>
-</tr>
-<tr>
-<td style="text-align:center"></td>
-<td style="text-align:center"><code>||</code></td>
-<td style="text-align:center">自左向右</td>
-</tr>
-<tr>
-<td style="text-align:center"></td>
-<td style="text-align:center">?:</td>
-<td style="text-align:center">自右向左</td>
-</tr>
-<tr>
-<td style="text-align:center"></td>
-<td style="text-align:center"><code>=+=-=*=、=%=&amp;=^=|=&lt;&lt;=&gt;&gt;=</code></td>
-<td style="text-align:center">自右向左</td>
-</tr>
-<tr>
-<td style="text-align:center">最低</td>
-<td style="text-align:center">，</td>
-<td style="text-align:center">自左向右</td>
+<td style="text-align:center">表示指定的输入项在读入后不赋给相应的变量</td>
 </tr>
 </tbody>
 </table>
@@ -639,7 +584,7 @@ iInt=(int)fFloat;
                     <span class="reprint-tip">Reprint please specify: </span>
                     <a href="http://chuxinuncle.top" class="b-link-green">oneShenxin</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2018/11/28/2018-11-28阅读笔记/" class="b-link-green">2018-11-28阅读笔记</a>
+                    <a href="/2018/11/29/2018-11-29阅读笔记/" class="b-link-green">2018-11-29阅读笔记</a>
                 </p>
             </div>
         </div>
@@ -659,7 +604,7 @@ iInt=(int)fFloat;
     <div class="row article-row">
         
         <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge left-badge text-color">Previous</div>
+            <div class="article-badge left-badge text-color">Current</div>
             <div class="card">
                 <a href="/2018/11/29/2018-11-29阅读笔记/">
                     <div class="card-image">
@@ -678,9 +623,9 @@ putchar('A')
 putchar(getchar());
 意思是getchar函数作为putchar函数的参数，通过getchar函</div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2018-11-29
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-11-29
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-user fa-fw"></i>
@@ -689,6 +634,7 @@ putchar(getchar());
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -705,47 +651,27 @@ putchar(getchar());
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">Next</div>
             <div class="card">
-                <a href="/2018/11/27/2018-11-27阅读笔记/">
+                <a href="/2018/11/28/2018-11-28阅读笔记/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="2018-11-27阅读笔记">
+                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="2018-11-28阅读笔记">
                         
-                        <span class="card-title">2018-11-27阅读笔记</span>
+                        <span class="card-title">2018-11-28阅读笔记</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">3.6.2 实型变量
-实型变量的分类
+                    <div class="summary">4.2.3强制类型转换
 
-
-
-类型名称
-关键字
-类型名称
-关键字
-
-
-
-
-单精度类型
-float
-双精度类型
-double
-
-
-长双精度类型
-long double
-
-
-
-
-
-3.6.3字符型变量
-定义字符型变量的方法是使用关</div>
+cChar=(char)fFloat;       
+iShort=(short)fFloat;
+iInt=(int)fFloat;
+  
+¶4.3.1算术运算符
+算术运算符包括两个单目运算符（正和负）和5个双目运</div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-11-27
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-11-28
                             </span>
                         <span class="publish-author">
                             
