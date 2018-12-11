@@ -5,11 +5,8 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="2018-12-10阅读笔记, oneShenxin">
-    <meta name="description" content="¶8.6.1字符串复制
-在字符串操作中，字符串复制是比较常用的操作之一。在字符串处理函数中包含strcpy函数，该函数可用于复制特定长度的字符串到另一个字符串中。其语法格式如下：
-strcpy(目的字符数组名，源字符数组名)
-功能：把源字符">
+    <meta name="keywords" content="Tag: C语言从入门到精通, oneShenxin">
+    <meta name="description" content="Tag: C语言从入门到精通 | oneShenxin">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +14,7 @@ strcpy(目的字符数组名，源字符数组名)
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>2018-12-10阅读笔记 | oneShenxin</title>
+    <title>Tag: C语言从入门到精通 | oneShenxin</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -246,307 +243,143 @@ strcpy(目的字符数组名，源字符数组名)
     </nav>
 </header>
 
-
-
-<div class="bg-cover post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
+<div class="bg-cover  about-cover" style="background-image: url('/medias/cover.jpg')">
     <div class="container">
         <div class="row">
-            <div class="col s12 m12 l12">
+            <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
                 <div class="brand">
-                    <div class="description center-align post-title">
-                        2018-12-10阅读笔记
+                    <div class="title center-align">
+                    
+                        你，今天进步了吗？
+                    
+                    </div>
+
+                    <div class="description center-align">
+                    
+                        oneShenxin
+                    
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-
-
-
-<main class="container content">
-
-    
-    <!-- 文章内容详情 -->
-<div id="artDetail">
-    <div class="card">
-        <div class="card-content article-info">
-            
-            <div class="article-tag">
-                
-                <a href="/tags/C语言从入门到精通/" target="_blank">
-                    <span class="chip bg-color">C语言从入门到精通</span>
-                </a>
-                
-            </div>
-            
-            <div class="post-info">
-                
-
-                <span class="post-date">
-                    <i class="fa fa-clock-o fa-fw"></i>2018-12-10
-                </span>
-            </div>
-        </div>
-        <hr>
-        <div class="card-content article-card-content">
-            <div id="articleContent">
-                <h3 id="8-6-1字符串复制"><a class="header-anchor" href="#8-6-1字符串复制">¶</a>8.6.1字符串复制</h3>
-<p>在字符串操作中，字符串复制是比较常用的操作之一。在字符串处理函数中包含strcpy函数，该函数可用于复制特定长度的字符串到另一个字符串中。其语法格式如下：<br>
-<code>strcpy(目的字符数组名，源字符数组名)</code><br>
-功能：把源字符数组中的字符串复制到目的字符串数组中，字符串结束标志“\0”也一同复制。</p>
-<h3 id="8-6-2字符串连接"><a class="header-anchor" href="#8-6-2字符串连接">¶</a>8.6.2字符串连接</h3>
-<p>字符串连接就是将一个字符串连接到另一个字符串的末尾，使其组合成一个新的字符串。在字符串处理函数中，strcat函数就具有字符串连接的功能。其语法格式如下：<br>
-<code>stract(目的字符数组名，源字符数组名)</code><br>
-功能：把源字符数组中的字符串连接到目的字符数组重字符串的后面，并删去目的字符数组中原有的串结束标志“\0”。</p>
-
-            </div>
-            <hr>
-
-            
-            <style>
-    #reward {
-        margin: 40px 0;
-        text-align: center;
-    }
-
-    #reward .reward-link {
-        font-size: 1.88rem;
-    }
-
-    #reward .btn-floating:hover {
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
-    }
-
-    #rewardModal {
-        width: 320px;
-        height: 350px;
-    }
-
-    #rewardModal .reward-title {
-        margin: 15px auto;
-        padding-bottom: 5px;
-    }
-
-    #rewardModal .modal-content {
-        padding: 10px;
-    }
-
-    #rewardModal .close {
-        position: absolute;
-        right: 15px;
-        top: 15px;
-        color: rgba(0, 0, 0, 0.5);
-        font-size: 1.3rem;
-        line-height: 20px;
-        cursor: pointer;
-    }
-
-    #rewardModal .reward-tabs {
-        margin: 0 auto;
-        width: 210px;
-    }
-
-    .reward-tabs .tabs {
-        height: 38px;
-        margin: 10px auto;
-        padding-left: 0;
-    }
-
-    .reward-tabs .tabs .tab {
-        height: 38px;
-        line-height: 38px;
-    }
-
-    .reward-tabs .tab a {
-        color: #fff;
-        background-color: #ccc;
-    }
-
-    .reward-tabs .tab a:hover {
-        color: #fff;
-    }
-
-    .reward-tabs .wechat-tab .active {
-        color: #fff;
-        background-color: #22AB38;
-    }
-
-    .reward-tabs .alipay-tab .active {
-        color: #fff;
-        background-color: #019FE8;
-    }
-
-    .reward-tabs .reward-img {
-        width: 210px;
-        height: 210px;
-    }
-</style>
-
-<div id="reward">
-    <a class="reward-link btn-floating btn-large waves-effect waves-light red">赏</a>
-
-    <!-- Modal Structure -->
-    <div id="rewardModal" class="modal">
-        <div class="modal-content">
-            <a class="close"><i class="fa fa-close"></i></a>
-            <h4 class="reward-title">你的赏识是我前进的动力</h4>
-            <div class="reward-content">
-                <div class="reward-tabs">
-                    <ul class="tabs">
-                        <li class="tab wechat-tab waves-effect waves-light"><a class="active" href="#wechat">微信</a></li>
-                        <li class="tab alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
-                    </ul>
-                    <div id="wechat">
-                        <img src="/medias/reward/wechat.jpg" class="reward-img" alt="微信打赏二维码">
-                    </div>
-                    <div id="alipay">
-                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
-                    </div>
-                </div>
-            </div>
-        </div>
+        
     </div>
 </div>
 
 <script>
-    $(function () {
-        $('#reward .reward-link').on('click', function () {
-            $('#rewardModal').openModal();
-        });
-
-        $('#rewardModal .close').on('click', function () {
-            $('#rewardModal').closeModal();
-        });
-    });
+// Dynamically switch banner pictures every day.
+$('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');
 </script>
-            
 
-            <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<main class="content">
 
-<div id="article-share">
     
-    <div class="social-share" data-disabled="qzone" data-wechat-qrcode-helper="<p>微信里点“发现”->“扫一扫”二维码便可查看分享。</p>"></div>
-    
-</div>
 
-<script src="/libs/share/js/social-share.min.js"></script>
-
-            <div class="reprint">
-                <p>
-                    <span class="reprint-tip">Reprint please specify: </span>
-                    <a href="http://chuxinuncle.top" class="b-link-green">oneShenxin</a>
-                    <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2018/12/10/2018-12-10阅读笔记/" class="b-link-green">2018-12-10阅读笔记</a>
-                </p>
+<div id="tags" class="container chip-container">
+    <div class="card">
+        <div class="card-content">
+            <div class="tag-title center-align">Post Tags</div>
+            <div class="tag-chips">
+                
+                
+                <a href="/tags/C语言从入门到精通/" title="C语言从入门到精通: 9">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-active " data-tagname="C语言从入门到精通" style="background-color: #F9EBEA;">C语言从入门到精通
+                        <span class="tag-length">9</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/自学考试/" title="自学考试: 2">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default " data-tagname="自学考试" style="background-color: #F5EEF8;">自学考试
+                        <span class="tag-length">2</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/手拍/" title="手拍: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default " data-tagname="手拍" style="background-color: #D5F5E3;">手拍
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/前端/" title="前端: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default " data-tagname="前端" style="background-color: #E8F8F5;">前端
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
             </div>
         </div>
     </div>
-
-    
-
-    
-
-    
-
-    
-
-    
-
-<article id="prenext-posts" class="prev-next articles">
-    <div class="row article-row">
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge left-badge text-color">Previous</div>
-            <div class="card">
-                <a href="/2018/12/11/2018-12-11阅读笔记/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="2018-12-11阅读笔记">
-                        
-                        <span class="card-title">2018-12-11阅读笔记</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary">¶8.6.3字符串比较
-字符串比较就是将一个字符串与另一个字符串从首字母开始，按照ASCII码的顺序逐个进行比较。在字符串处理函数时，strcmp函数就具有在字符串间进行比较的功能。其语法格式如下：
-strcmp(字符数组名1，字符数组名2</div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2018-12-11
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fa fa-user fa-fw"></i>
-                            oneShenxin
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/C语言从入门到精通/" target="_blank">
-                        <span class="chip bg-color">C语言从入门到精通</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">Next</div>
-            <div class="card">
-                <a href="/2018/12/06/2018-12-6阅读笔记/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="2018-12-6阅读笔记">
-                        
-                        <span class="card-title">2018-12-6阅读笔记</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary">¶goto语句
-goto语句为无条件转移语句，可以使程序立即跳转到函数内部的任意一条可执行语句。
-例如：
-goto Show
-¶break语句
-这个break语句和switch…case分支结构中的break语句的作用是不相同的
-break</div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-12-06
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fa fa-user fa-fw"></i>
-                            oneShenxin
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/C语言从入门到精通/" target="_blank">
-                        <span class="chip bg-color">C语言从入门到精通</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-    </div>
-</article>
 </div>
-    
 
+    <div class="container">
+        
+
+        <article>
+            <div class="row tags-posts">
+                
+                
+                <div class="article tag-post col s12 m6 l4" data-tags="C语言从入门到精通" data-aos="fade-up">
+                    <div class="card">
+                        <a href="/2018/11/25/2018-11-25阅读笔记/">
+                            <div class="card-image tag-image">
+                                
+                                
+                                <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="2018-11-25阅读笔记">
+                                
+                                <span class="card-title">2018-11-25阅读笔记</span>
+                            </div>
+                        </a>
+                        <div class="card-content article-content">
+                            <div class="publish-info">
+                                <span class="publish-date">
+                                    <i class="fa fa-clock-o fa-fw icon-date"></i>2018-11-25
+                                </span>
+                                <span class="publish-author">
+                                    
+                                    <i class="fa fa-user fa-fw"></i>
+                                    oneShenxin
+                                    
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </article>
+    </div>
 </main>
+
+
+<div class="container paging">
+    <div class="row">
+        <div class="col s6 m4 l4">
+            
+            <a href="/tags/C语言从入门到精通/" class="left btn-floating btn-large waves-effect waves-light bg-color">
+                <i class="fa fa-angle-left"></i>
+            </a>
+            
+        </div>
+        <div class="page-info col m4 l4 hide-on-small-only">
+            <div class="center-align b-text-gray">2 / 2</div>
+        </div>
+        <div class="col s6 m4 l4">
+            
+            <a class="right btn-floating btn-large disabled">
+                <i class="fa fa-angle-right"></i>
+            </a>
+            
+        </div>
+    </div>
+</div>
+
 
 <footer class="page-footer bg-color">
     <div class="container row center-align">

@@ -5,11 +5,10 @@
 
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="2018-12-10阅读笔记, oneShenxin">
-    <meta name="description" content="¶8.6.1字符串复制
-在字符串操作中，字符串复制是比较常用的操作之一。在字符串处理函数中包含strcpy函数，该函数可用于复制特定长度的字符串到另一个字符串中。其语法格式如下：
-strcpy(目的字符数组名，源字符数组名)
-功能：把源字符">
+    <meta name="keywords" content="2018-12-11阅读笔记, oneShenxin">
+    <meta name="description" content="¶8.6.3字符串比较
+字符串比较就是将一个字符串与另一个字符串从首字母开始，按照ASCII码的顺序逐个进行比较。在字符串处理函数时，strcmp函数就具有在字符串间进行比较的功能。其语法格式如下：
+strcmp(字符数组名1，字符数组名2">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +16,7 @@ strcpy(目的字符数组名，源字符数组名)
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>2018-12-10阅读笔记 | oneShenxin</title>
+    <title>2018-12-11阅读笔记 | oneShenxin</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -248,13 +247,13 @@ strcpy(目的字符数组名，源字符数组名)
 
 
 
-<div class="bg-cover post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
+<div class="bg-cover post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        2018-12-10阅读笔记
+                        2018-12-11阅读笔记
                     </div>
                 </div>
             </div>
@@ -284,21 +283,32 @@ strcpy(目的字符数组名，源字符数组名)
                 
 
                 <span class="post-date">
-                    <i class="fa fa-clock-o fa-fw"></i>2018-12-10
+                    <i class="fa fa-clock-o fa-fw"></i>2018-12-11
                 </span>
             </div>
         </div>
         <hr>
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="8-6-1字符串复制"><a class="header-anchor" href="#8-6-1字符串复制">¶</a>8.6.1字符串复制</h3>
-<p>在字符串操作中，字符串复制是比较常用的操作之一。在字符串处理函数中包含strcpy函数，该函数可用于复制特定长度的字符串到另一个字符串中。其语法格式如下：<br>
-<code>strcpy(目的字符数组名，源字符数组名)</code><br>
-功能：把源字符数组中的字符串复制到目的字符串数组中，字符串结束标志“\0”也一同复制。</p>
-<h3 id="8-6-2字符串连接"><a class="header-anchor" href="#8-6-2字符串连接">¶</a>8.6.2字符串连接</h3>
-<p>字符串连接就是将一个字符串连接到另一个字符串的末尾，使其组合成一个新的字符串。在字符串处理函数中，strcat函数就具有字符串连接的功能。其语法格式如下：<br>
-<code>stract(目的字符数组名，源字符数组名)</code><br>
-功能：把源字符数组中的字符串连接到目的字符数组重字符串的后面，并删去目的字符数组中原有的串结束标志“\0”。</p>
+                <h3 id="8-6-3字符串比较"><a class="header-anchor" href="#8-6-3字符串比较">¶</a>8.6.3字符串比较</h3>
+<p>字符串比较就是将一个字符串与另一个字符串从首字母开始，按照ASCII码的顺序逐个进行比较。在字符串处理函数时，strcmp函数就具有在字符串间进行比较的功能。其语法格式如下：<br>
+<code>strcmp(字符数组名1，字符数组名2)</code><br>
+功能：按照ASCII码顺序比较两个数组中的字符串，并返回比较结果。<br>
+返回值如下：<br>
+字符串1=字符串2，返回值为0。<br>
+字符串1&gt;字符串2，返回值为正数。<br>
+字符串1&lt;字符串2，返回值为负数。</p>
+<h3 id="8-6-4字符串大小写转换"><a class="header-anchor" href="#8-6-4字符串大小写转换">¶</a>8.6.4字符串大小写转换</h3>
+<p>字符串大小写转换需要使用strupr和strlwr函数。strupr函数的语法格式如下：<br>
+<code>strupr(字符串)</code><br>
+功能：将字符串中的小写字母转换成大写字母，其他字母不变。<br>
+strlwr函数的语法格式如下：<br>
+<code>strlwr(字符串)</code><br>
+功能：将字符串中的大写字母转换成小写字母，其他字母不变。</p>
+<h3 id="8-6-5获得字符串长度"><a class="header-anchor" href="#8-6-5获得字符串长度">¶</a>8.6.5获得字符串长度</h3>
+<p>在使用字符串时，有时需要动态获得字符串的长度，通过循环来判断字符串结束标志“\0”虽然也能获得字符串的长度，但是实现起来相对较繁琐，这时可以使用strlen函数来计算字符串的长度。strlen函数的语法格式如下：<br>
+<code>strlen(字符数组名)</code><br>
+功能：计算字符串的实际长度（不含字符串结束标志“\0”）,函数返回值为字符串的实际长度。</p>
 
             </div>
             <hr>
@@ -437,7 +447,7 @@ strcpy(目的字符数组名，源字符数组名)
                     <span class="reprint-tip">Reprint please specify: </span>
                     <a href="http://chuxinuncle.top" class="b-link-green">oneShenxin</a>
                     <i class="fa fa-angle-right fa-lg fa-fw text-color"></i>
-                    <a href="/2018/12/10/2018-12-10阅读笔记/" class="b-link-green">2018-12-10阅读笔记</a>
+                    <a href="/2018/12/11/2018-12-11阅读笔记/" class="b-link-green">2018-12-11阅读笔记</a>
                 </p>
             </div>
         </div>
@@ -457,7 +467,7 @@ strcpy(目的字符数组名，源字符数组名)
     <div class="row article-row">
         
         <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge left-badge text-color">Previous</div>
+            <div class="article-badge left-badge text-color">Current</div>
             <div class="card">
                 <a href="/2018/12/11/2018-12-11阅读笔记/">
                     <div class="card-image">
@@ -473,9 +483,9 @@ strcpy(目的字符数组名，源字符数组名)
 字符串比较就是将一个字符串与另一个字符串从首字母开始，按照ASCII码的顺序逐个进行比较。在字符串处理函数时，strcmp函数就具有在字符串间进行比较的功能。其语法格式如下：
 strcmp(字符数组名1，字符数组名2</div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2018-12-11
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-12-11
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-user fa-fw"></i>
@@ -484,6 +494,7 @@ strcmp(字符数组名1，字符数组名2</div>
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -500,26 +511,23 @@ strcmp(字符数组名1，字符数组名2</div>
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">Next</div>
             <div class="card">
-                <a href="/2018/12/06/2018-12-6阅读笔记/">
+                <a href="/2018/12/10/2018-12-10阅读笔记/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="2018-12-6阅读笔记">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="2018-12-10阅读笔记">
                         
-                        <span class="card-title">2018-12-6阅读笔记</span>
+                        <span class="card-title">2018-12-10阅读笔记</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
-                    <div class="summary">¶goto语句
-goto语句为无条件转移语句，可以使程序立即跳转到函数内部的任意一条可执行语句。
-例如：
-goto Show
-¶break语句
-这个break语句和switch…case分支结构中的break语句的作用是不相同的
-break</div>
+                    <div class="summary">¶8.6.1字符串复制
+在字符串操作中，字符串复制是比较常用的操作之一。在字符串处理函数中包含strcpy函数，该函数可用于复制特定长度的字符串到另一个字符串中。其语法格式如下：
+strcpy(目的字符数组名，源字符数组名)
+功能：把源字符</div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-12-06
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2018-12-10
                             </span>
                         <span class="publish-author">
                             
